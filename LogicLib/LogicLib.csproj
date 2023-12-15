@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Stride" Version="4.2.0.1" />
+    <PackageReference Include="Stride.Core.Mathematics" Version="4.2.0.1" />
+    <PackageReference Include="Stride.Engine" Version="4.2.0.1" />
+  </ItemGroup>
+
+</Project>

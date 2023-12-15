@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+VisualStudioVersion = 16.0.0.0
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic.Windows", "Logic.Windows\Logic.Windows.csproj", "{F62E5CA7-7BE5-4DC5-89EF-5C1FB6D5E784}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{8D3EC3DD-E72A-4E89-AAF7-72CFD95CC697}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic.Linux", "Logic.Linux\Logic.Linux.csproj", "{557C4801-A2E3-493F-B566-4B391318C565}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic.macOS", "Logic.macOS\Logic.macOS.csproj", "{7C630A40-B448-4E90-A917-57E5181594A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicLib", "LogicLib\LogicLib.csproj", "{4AB5362B-B9C8-4C13-ACD6-5E7ACC03F9E5}"
+EndProject
+Global
+EndGlobal
