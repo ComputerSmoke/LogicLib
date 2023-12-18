@@ -1,0 +1,47 @@
+!PrefabAsset
+Id: 613b9a34-7ea2-4faf-97d2-062686a7f696
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 7d220887-e62e-4efb-b855-b166a3e1f717
+    Parts:
+        -   Entity:
+                Id: 7d220887-e62e-4efb-b855-b166a3e1f717
+                Name: Input
+                Components:
+                    fed4d5e924410676db8692ff92557a58: !TransformComponent
+                        Id: e4bb7d65-96a1-4b3e-b313-a3850fd40672
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    085191278eb245c21f6e3f1dcef5c981: !ModelComponent
+                        Id: ae3d3b0a-7109-41dd-b038-6e2a454a11fb
+                        Model: 46892274-a637-4430-9a85-b482cae064f9:Gates/models/Connector
+                        Materials: {}
+                    02f621b5858381a9babd21e8401a801d: !RigidbodyComponent
+                        Id: 43600725-91d9-4994-a6c7-25a864b259db
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            cada2c28944ca0a91d4f2848942fe833: !CylinderColliderShapeDesc
+                                Height: 0.05
+                                Radius: 0.0125
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    51a6099fd658acdf7837f9368feee1cc: !LogicLib.Gates.Connector,LogicLib
+                        Id: a215417f-4e86-46d8-858c-21b339eb93fc
+                        IsInput: true

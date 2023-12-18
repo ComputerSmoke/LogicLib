@@ -1,0 +1,15 @@
+!Model
+Id: 66b8e565-b82c-4143-a0ba-a4c466a4ceb0
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../GateResources/gateModels/buffer.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    3d3fee6672e4110112da847d7b0fae6f:
+        Name: Material
+        MaterialInstance:
+            Material: 513ebebf-ef23-4526-a6e2-15cd2587731c:GateResources/materials/buffer
+Modifiers: {}
+~SourceHashes:
+    9e7a88ec3b99f8a2275b53f37e145d36~../../GateResources/gateModels/buffer.fbx: 2f7f369ac0ea80a0dd345bad0b388892

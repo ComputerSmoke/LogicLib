@@ -1,0 +1,7 @@
+!Texture
+Id: f1ea553a-59e2-491b-8156-18cd892deec6
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../gateImages/and.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

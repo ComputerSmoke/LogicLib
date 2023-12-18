@@ -1,0 +1,206 @@
+!PrefabAsset
+Id: 4378c0ea-4c90-4bf3-9525-bbb9a9311b5f
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 898dceb3-f9c5-4aa0-a1bf-ca60e8062e4a
+    Parts:
+        -   Entity:
+                Id: 3e041600-b436-43e9-93da-cf79d5725a33
+                Name: Input
+                Components:
+                    fed4d5e924410676db8692ff92557a58: !TransformComponent
+                        Id: 291f82dc-b3d2-4739-9090-089a9a2e39d3
+                        Position*: {X: 0.06, Y: 0.0, Z: 0.11}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    085191278eb245c21f6e3f1dcef5c981: !ModelComponent
+                        Id: ae8aa72c-d022-4e8f-85f1-784170018a36
+                        Model: 46892274-a637-4430-9a85-b482cae064f9:Gates/models/Connector
+                        Materials: {}
+                    02f621b5858381a9babd21e8401a801d: !RigidbodyComponent
+                        Id: f8f41c7f-562a-4796-b8e0-ff199ed940a4
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            cada2c28944ca0a91d4f2848942fe833: !CylinderColliderShapeDesc
+                                Height: 0.05
+                                Radius: 0.0125
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    51a6099fd658acdf7837f9368feee1cc: !LogicLib.Gates.Connector,LogicLib
+                        Id: 062ef326-1b18-4f56-9f21-50c027bb19eb
+                        IsInput: true
+            Base:
+                BasePartAsset: 613b9a34-7ea2-4faf-97d2-062686a7f696:Gates/prefabs/Input
+                BasePartId: 7d220887-e62e-4efb-b855-b166a3e1f717
+                InstanceId: 4e719f21-7232-4fd8-84eb-2eeb25e8c5c7
+        -   Folder: null
+            Entity:
+                Id: 5febe788-aec4-4ec8-9475-170276486c45
+                Name: Input
+                Components:
+                    fed4d5e924410676db8692ff92557a58: !TransformComponent
+                        Id: a4568689-99bc-4fd0-bf27-ea8f69e26793
+                        Position*: {X: -0.06, Y: 0.0, Z: 0.11}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    085191278eb245c21f6e3f1dcef5c981: !ModelComponent
+                        Id: d7d75083-e908-4a71-869f-df4835b64c68
+                        Model: 46892274-a637-4430-9a85-b482cae064f9:Gates/models/Connector
+                        Materials: {}
+                    02f621b5858381a9babd21e8401a801d: !RigidbodyComponent
+                        Id: f20f5a91-d6c0-4694-b3c3-785e0d7a61e0
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            cada2c28944ca0a91d4f2848942fe833: !CylinderColliderShapeDesc
+                                Height: 0.05
+                                Radius: 0.0125
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    51a6099fd658acdf7837f9368feee1cc: !LogicLib.Gates.Connector,LogicLib
+                        Id: 1ab8363e-87f2-41f7-8cae-5bbbeb33af51
+                        IsInput: true
+            Base:
+                BasePartAsset: 613b9a34-7ea2-4faf-97d2-062686a7f696:Gates/prefabs/Input
+                BasePartId: 7d220887-e62e-4efb-b855-b166a3e1f717
+                InstanceId: 2daadfb3-0f62-4193-8488-0b95ec1713eb
+        -   Entity:
+                Id: 74be0739-fbf3-4acf-9f87-106ad14a300d
+                Name: Output
+                Components:
+                    fed4d5e924410676db8692ff92557a58: !TransformComponent
+                        Id: 22a46858-8698-41a0-bf6f-21e0af0f20a7
+                        Position*: {X: 0.06, Y: 0.0, Z: -0.11}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    085191278eb245c21f6e3f1dcef5c981: !ModelComponent
+                        Id: c4a1a261-f0e7-4416-8cb1-4a64f06791fb
+                        Model: 46892274-a637-4430-9a85-b482cae064f9:Gates/models/Connector
+                        Materials:
+                            47a2a2f096c8810476ce7c4814b4ade8~0: bcb11bbb-76d9-477b-a9b0-60066804feef:GateResources/materials/ConnectorOut
+                    02f621b5858381a9babd21e8401a801d: !RigidbodyComponent
+                        Id: 45bdc0ee-7f9c-41db-aa85-ce32311f0b99
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            cada2c28944ca0a91d4f2848942fe833: !CylinderColliderShapeDesc
+                                Height: 0.05
+                                Radius: 0.0125
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    51a6099fd658acdf7837f9368feee1cc: !LogicLib.Gates.Connector,LogicLib
+                        Id: af43ee1f-0a81-4a86-8ff1-f39eae68c882
+                        IsInput: false
+            Base:
+                BasePartAsset: 30223cf5-9c47-41a8-8712-67c6a7e29550:Gates/prefabs/Output
+                BasePartId: 82431641-5af6-484e-81c3-8c74a352d9ba
+                InstanceId: d9fb80d4-a899-4c0c-b0df-c03671c25248
+        -   Folder: null
+            Entity:
+                Id: 898dceb3-f9c5-4aa0-a1bf-ca60e8062e4a
+                Name: NandGate
+                Components:
+                    c6b4ca2bde67720fe6d4cbfb0038f9a4: !TransformComponent
+                        Id: 7efa49ed-01d1-48fd-ae93-9656a1ec52dc
+                        Position*: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0db461fd45d9d36ee7514566c86b2ae7: ref!! 291f82dc-b3d2-4739-9090-089a9a2e39d3
+                            57f61cfe0d7350fe3332fb0039161843: ref!! a4568689-99bc-4fd0-bf27-ea8f69e26793
+                            8daefdb5687fe00a42efb1bf5431e0e6: ref!! 22a46858-8698-41a0-bf6f-21e0af0f20a7
+                            0aa2d5505ea68bf83a98bd3df5c74818: ref!! 158996a2-0b8f-47b2-b4ee-9747bbca8bea
+                    43f57d92cc9e082520b80106a6bb12c1: !ModelComponent
+                        Id: 767ae881-ad4d-4ced-8861-fd1f05ad1493
+                        Model: 9f65fae1-5ea6-4bcc-ae6c-fd35519c8d73:Gates/models/or
+                        Materials:
+                            0f49614ced1d26953e594891aea5cb63~0: 09085c2d-1f22-4d72-a300-ec27be9539a4:GateResources/materials/nand
+                    129026ba1e718e41f405d37e1d1fa7af: !LogicLib.Gates.NandGate,LogicLib
+                        Id: 8992a3c2-d7a4-4620-92fc-042694f9004c
+        -   Folder: null
+            Entity:
+                Id: d8d298ce-a566-477a-8810-1687e53785e9
+                Name: Output
+                Components:
+                    fed4d5e924410676db8692ff92557a58: !TransformComponent
+                        Id: 158996a2-0b8f-47b2-b4ee-9747bbca8bea
+                        Position*: {X: -0.06, Y: 0.0, Z: -0.11}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    085191278eb245c21f6e3f1dcef5c981: !ModelComponent
+                        Id: 7914773b-b643-4fed-8326-e4c81812d046
+                        Model: 46892274-a637-4430-9a85-b482cae064f9:Gates/models/Connector
+                        Materials:
+                            47a2a2f096c8810476ce7c4814b4ade8~0: bcb11bbb-76d9-477b-a9b0-60066804feef:GateResources/materials/ConnectorOut
+                    02f621b5858381a9babd21e8401a801d: !RigidbodyComponent
+                        Id: b9b6b888-c293-4132-a31c-ee48509e162c
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            cada2c28944ca0a91d4f2848942fe833: !CylinderColliderShapeDesc
+                                Height: 0.05
+                                Radius: 0.0125
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    51a6099fd658acdf7837f9368feee1cc: !LogicLib.Gates.Connector,LogicLib
+                        Id: 9cfff930-f159-49c6-bea3-d764860d204a
+                        IsInput: false
+            Base:
+                BasePartAsset: 30223cf5-9c47-41a8-8712-67c6a7e29550:Gates/prefabs/Output
+                BasePartId: 82431641-5af6-484e-81c3-8c74a352d9ba
+                InstanceId: 5bb1537c-6933-48b9-b6e4-4c7295a83dc4
