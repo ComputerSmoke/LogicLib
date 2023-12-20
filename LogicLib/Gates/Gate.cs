@@ -1,12 +1,13 @@
 ﻿using Stride.Engine;
 using LogicLib.Devices;
+using LogicLib.Gates.Connectors;
 
 namespace LogicLib.Gates
 {
     public abstract class Gate : StartupScript
     {
-        protected readonly List<Connector> inputs = [];
-        protected readonly List<Connector> outputs = [];
+        protected readonly List<InputConnector> inputs = [];
+        protected readonly List<OutputConnector> outputs = [];
         public bool State { get; private set; }
         bool NextState { get; set; }
         private List<Device> devices;
@@ -14,7 +15,10 @@ namespace LogicLib.Gates
         public override void Start()
         {
             base.Start();
-            devices = new(Entity.GetAll<Device>());
+            if (Entity.GetParent() == null)
+                devices = [];
+            else
+                devices = new(Entity.GetParent().GetAll<Device>());
             FindConnectors();
             Ticker.UpdateGate(this);
         }
@@ -22,10 +26,10 @@ namespace LogicLib.Gates
         {
             List<Connector> connectors = Entity.FindAllInChild<Connector>();
             foreach (Connector connector in connectors) {
-                if (connector.IsInput)
-                    inputs.Add(connector);
+                if (connector is InputConnector inputConnector)
+                    inputs.Add(inputConnector);
                 else
-                    outputs.Add(connector);
+                    outputs.Add((OutputConnector)connector);
             }
         }
         //Update next state of gate based on State of inputs, which it will go to when UpdateState called

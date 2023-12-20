@@ -16,7 +16,7 @@ namespace LogicLib.Devices
         public override void Start()
         {
             base.Start();
-            gate = Entity.Get<Gate>();
+            gate = Entity.FindInChild<Gate>();
             lightComponent = Entity.FindInChild<LightComponent>();
         }
         public override void GateChange(Gate gate)

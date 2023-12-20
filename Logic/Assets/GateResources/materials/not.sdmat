@@ -2,11 +2,10 @@
 Id: 369f93fb-785a-4607-9e92-09aabdad7e88
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Archetype: 513ebebf-ef23-4526-a6e2-15cd2587731c:GateResources/materials/buffer
 Attributes:
     Diffuse: !MaterialDiffuseMapFeature
         DiffuseMap: !ComputeTextureColor
-            Texture*: 7b1de92f-c9dc-4240-a15c-2d810404dd5f:GateResources/textures/not
+            Texture: 7b1de92f-c9dc-4240-a15c-2d810404dd5f:GateResources/textures/not
             FallbackValue:
                 Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
             Scale: {X: 1.0, Y: 1.0}
