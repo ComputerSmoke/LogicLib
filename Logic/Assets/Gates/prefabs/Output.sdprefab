@@ -23,6 +23,7 @@ Hierarchy:
                             47a2a2f096c8810476ce7c4814b4ade8~0: bcb11bbb-76d9-477b-a9b0-60066804feef:GateResources/materials/ConnectorOut
                     f2253a20d964e67f7b6e7c24c7d91679: !ParticleSystemComponent
                         Id: a4d6392b-3403-4e87-8ee3-b358b96a93fe
+                        Enabled: false
                         Control:
                             ResetSeconds: 0.0
                             Control: Play

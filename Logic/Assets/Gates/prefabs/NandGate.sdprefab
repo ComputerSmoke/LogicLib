@@ -110,6 +110,7 @@ Hierarchy:
                             47a2a2f096c8810476ce7c4814b4ade8~0: bcb11bbb-76d9-477b-a9b0-60066804feef:GateResources/materials/ConnectorOut
                     f2253a20d964e67f7b6e7c24c7d91679: !ParticleSystemComponent
                         Id: 35104774-8d94-4e15-b0b4-cf8e87f73f22
+                        Enabled: false
                         Control:
                             ResetSeconds: 0.0
                             Control: Play
@@ -252,6 +253,28 @@ Hierarchy:
                             0f49614ced1d26953e594891aea5cb63~0: 09085c2d-1f22-4d72-a300-ec27be9539a4:GateResources/materials/nand
                     129026ba1e718e41f405d37e1d1fa7af: !LogicLib.Gates.NandGate,LogicLib
                         Id: 8992a3c2-d7a4-4620-92fc-042694f9004c
+                    7b8e438aa28595c22b9bd1b54bfec446: !RigidbodyComponent
+                        Id: 3424b6c8-9028-44cb-9609-463851ba4425
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            e462d9280a28ac75884416eb8d3b3c08: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.25, Y: 0.05, Z: 0.2}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Folder: null
             Entity:
                 Id: d8d298ce-a566-477a-8810-1687e53785e9
@@ -270,6 +293,7 @@ Hierarchy:
                             47a2a2f096c8810476ce7c4814b4ade8~0: bcb11bbb-76d9-477b-a9b0-60066804feef:GateResources/materials/ConnectorOut
                     f2253a20d964e67f7b6e7c24c7d91679: !ParticleSystemComponent
                         Id: 40ae7153-bc74-4afd-b20b-605e58023d0b
+                        Enabled: false
                         Control:
                             ResetSeconds: 0.0
                             Control: Play

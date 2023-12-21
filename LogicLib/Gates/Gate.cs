@@ -8,8 +8,8 @@ namespace LogicLib.Gates
     {
         protected readonly List<InputConnector> inputs = [];
         protected readonly List<OutputConnector> outputs = [];
-        public bool State { get; private set; }
-        bool NextState { get; set; }
+        public bool State { get; protected set; }
+        protected bool NextState { get; set; }
         private List<Device> devices;
         bool hadFirstRun;
         public override void Start()
@@ -41,7 +41,7 @@ namespace LogicLib.Gates
             NextState = ComputeNextState(inputVals);
         }
         //Update gate based on previously computed next state. Tell connected gates to update next tick if state changed.
-        public void UpdateState()
+        public virtual void UpdateState()
         {
             if (hadFirstRun && State == NextState)
                 return;

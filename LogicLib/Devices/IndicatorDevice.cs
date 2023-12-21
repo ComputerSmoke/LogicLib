@@ -6,17 +6,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Stride.Core.Mathematics;
+using LogicLib.Gates.Solo;
 
 namespace LogicLib.Devices
 {
     public class IndicatorDevice : Device
     {
-        private Gate gate;
+        private BufferGate gate;
         private LightComponent lightComponent;
         public override void Start()
         {
             base.Start();
-            gate = Entity.FindInChild<Gate>();
+            gate = Entity.FindInChild<BufferGate>();
             lightComponent = Entity.FindInChild<LightComponent>();
         }
         public override void GateChange(Gate gate)
