@@ -11,7 +11,7 @@ namespace LogicLib.Gates
         static readonly Queue<Gate> newTicks = [];
         static readonly HashSet<Gate> toTick = [];
         static bool ticking;
-        public static int TickDelay = 100;
+        public const int TickDelay = 100;
         //Enqueue a gate to update at next tick
         public static void UpdateGate(Gate gate)
         {

@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LogicLib.Gates.Duo
+namespace LogicLib.Gates.Duo.Bitwise
 {
     public class XnorGate : DuoGate
     {
-        protected override bool ComputeNextState(bool in1, bool in2)
+        protected override long ComputeNextState(long in1, long in2)
         {
-            return !in1 && !in2 || in1 && in2;
+            return ~(in1 ^ in2);
         }
     }
 }

@@ -42,7 +42,12 @@ namespace LogicLib.Gates.Connectors
         }
         private Color4 GetColor()
         {
-            return Read() ? new Color4(0, 1, 0) : new Color4(1, 0, 0);
+            long value = Read();
+            if (value == 0)
+                return new Color4(1, 0, 0);
+            else if (value == 1)
+                return new Color4(0, 1, 0);
+            return new Color4(0, 0, 1);
         }
         public override void Disconnect()
         {
@@ -54,7 +59,7 @@ namespace LogicLib.Gates.Connectors
             Connected?.Tick();
             particleSystem.Color = GetColor();
         }
-        public override bool Read()
+        public override long Read()
         {
             return gate.State;
         }

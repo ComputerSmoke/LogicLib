@@ -8,7 +8,7 @@ namespace LogicLib.Gates.Solo
 {
     public class BufferGate : SoloGate
     {
-        protected override bool ComputeNextState(bool in1)
+        protected override long ComputeNextState(long in1)
         {
             return in1;
         }

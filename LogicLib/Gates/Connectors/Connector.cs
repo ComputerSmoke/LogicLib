@@ -37,6 +37,6 @@ namespace LogicLib.Gates.Connectors
             gate = Entity.GetParent().Get<Gate>();
         }
         public abstract void Tick();
-        public abstract bool Read();
+        public abstract long Read();
     }
 }

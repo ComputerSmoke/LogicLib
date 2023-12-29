@@ -21,10 +21,10 @@ namespace LogicLib.Gates.Connectors
         {
             Ticker.UpdateGate(gate);
         }
-        public override bool Read()
+        public override long Read()
         {
             if (Connected == null)
-                return false;
+                return 0;
             return Connected.Read();
         }
     }

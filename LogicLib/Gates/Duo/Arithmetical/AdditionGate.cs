@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace LogicLib.Gates
 {
-    public class XorGate : DuoGate
+    public class AdditionGate : DuoGate
     {
-        protected override bool ComputeNextState(bool in1, bool in2)
+        protected override long ComputeNextState(long in1, long in2)
         {
-            return in1 && !in2 || !in1 && in2;
+            return in1 + in2;
         }
     }
 }

@@ -8,9 +8,9 @@ namespace LogicLib.Gates.Solo
 {
     public class NotGate : SoloGate
     {
-        protected override bool ComputeNextState(bool in1)
+        protected override long ComputeNextState(long in1)
         {
-            return !in1;
+            return ~in1;
         }
     }
 }

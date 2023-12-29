@@ -8,12 +8,12 @@ namespace LogicLib.Gates.Settable
 {
     public class SettableGate : Gate
     {
-        protected override bool ComputeNextState(bool[] inputs)
+        protected override long ComputeNextState(long[] inputs)
         {
             return NextState;
         }
         //Set state of gate. Should be called from output device
-        public virtual void SetNextState(bool state)
+        public virtual void SetNextState(long state)
         {
             NextState = state;
             Ticker.UpdateGate(this);

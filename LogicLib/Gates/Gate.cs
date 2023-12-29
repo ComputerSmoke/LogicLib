@@ -8,8 +8,8 @@ namespace LogicLib.Gates
     {
         protected readonly List<InputConnector> inputs = [];
         protected readonly List<OutputConnector> outputs = [];
-        public bool State { get; protected set; }
-        protected bool NextState { get; set; }
+        public long State { get; protected set; }
+        protected long NextState { get; set; }
         private List<Device> devices;
         bool hadFirstRun;
         public override void Start()
@@ -35,7 +35,7 @@ namespace LogicLib.Gates
         //Update next state of gate based on State of inputs, which it will go to when UpdateState called
         public void UpdateNextState()
         {
-            bool[] inputVals = new bool[inputs.Count];
+            long[] inputVals = new long[inputs.Count];
             for (int i = 0; i < inputs.Count; i++)
                 inputVals[i] = inputs[i].Read();
             NextState = ComputeNextState(inputVals);
@@ -53,6 +53,6 @@ namespace LogicLib.Gates
                 device.GateChange(this);
         }
         //Logic of gate
-        protected abstract bool ComputeNextState(bool[] inputs);
+        protected abstract long ComputeNextState(long[] inputs);
     }
 }

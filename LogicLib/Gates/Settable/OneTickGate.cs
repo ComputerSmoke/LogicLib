@@ -8,12 +8,12 @@ namespace LogicLib.Gates.Settable
 {
     public class OneTickGate : SettableGate
     {
-        //Update gate, but queue a disable update if set to true.
+        //Update gate, but queue a disable update if set to nonzero value.
         public override void UpdateState()
         {
             base.UpdateState();
-            if(State)
-                SetNextState(false);
+            if(State != 0)
+                SetNextState(0);
         }
     }
 }

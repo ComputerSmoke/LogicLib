@@ -21,7 +21,7 @@ namespace LogicLib.Devices
 
         public override void Interact()
         {
-            output.SetNextState(true);
+            output.SetNextState(1);
         }
     }
 }
