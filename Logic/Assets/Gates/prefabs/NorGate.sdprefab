@@ -208,8 +208,6 @@ Hierarchy:
                         Model: 9f65fae1-5ea6-4bcc-ae6c-fd35519c8d73:Gates/models/or
                         Materials:
                             0f49614ced1d26953e594891aea5cb63~0: 7b98155c-8bef-4506-950f-7ddf9161edb6:GateResources/materials/nor
-                    bc1d16f7110bad247c39196fdd967916: !LogicLib.Gates.NorGate,LogicLib
-                        Id: 3c831014-90d3-4ea0-8fa5-7399b1d3387a
                     0b6d355edbc28a8f3718d48b62a447f6: !RigidbodyComponent
                         Id: f8b4df15-d29c-41c2-af66-fc3867aa2cce
                         CanSleep: false
@@ -232,6 +230,8 @@ Hierarchy:
                                 Size: {X: 0.25, Y: 0.05, Z: 0.2}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    547bb0b1d76cc088fdcf7cbb855d682f: !LogicLib.Gates.Duo.Bitwise.NorGate,LogicLib
+                        Id: 444e42fb-d436-40e5-a348-fbc685430b32
         -   Entity:
                 Id: de3fb28d-5e05-4a0e-8450-8d9960999814
                 Name: Input

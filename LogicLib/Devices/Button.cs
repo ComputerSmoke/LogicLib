@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Stride.Animations;
 
 namespace LogicLib.Devices
 {
@@ -21,7 +22,10 @@ namespace LogicLib.Devices
 
         public override void Interact()
         {
-            output.SetNextState(1);
+            output.SetNextState(-1);
+            var animation = animations.Play("interact");
+            animation.RepeatMode = AnimationRepeatMode.PlayOnce;
+            animation.TimeFactor = 5f;
         }
     }
 }

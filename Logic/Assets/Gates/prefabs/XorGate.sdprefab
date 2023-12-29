@@ -70,8 +70,6 @@ Hierarchy:
                         Model: 9f65fae1-5ea6-4bcc-ae6c-fd35519c8d73:Gates/models/or
                         Materials:
                             0f49614ced1d26953e594891aea5cb63~0: 087a96d6-9469-4f22-9ee2-2ff1a1ab2830:GateResources/materials/xor
-                    78a135c7b663be2ec73cb1586217274c: !LogicLib.Gates.XorGate,LogicLib
-                        Id: c6a7283c-f31f-4c3b-ad86-84b9b7a9510c
                     1c9b27b7e6235fe5cdfca984175ecd7d: !RigidbodyComponent
                         Id: 98706188-5b8d-4216-ae5f-e1478b17f56c
                         CanSleep: false
@@ -94,6 +92,8 @@ Hierarchy:
                                 Size: {X: 0.25, Y: 0.05, Z: 0.2}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    4e9ce1146a25b5cc1c7f83d92b480f4e: !LogicLib.Gates.Duo.Bitwise.XorGate,LogicLib
+                        Id: 83a6894d-c8cc-4ce2-b1ab-a7b4337f90e6
         -   Entity:
                 Id: 6f10d06c-5585-4d78-8545-3f5ef7361c92
                 Name: Output

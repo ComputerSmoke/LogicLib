@@ -8,6 +8,7 @@ using Stride.Engine;
 using Stride.Input;
 using Stride.Physics;
 using LogicLib.Gates.Connectors;
+using LogicLib.Devices;
 
 namespace Logic
 {
@@ -30,13 +31,20 @@ namespace Logic
             if (!res.Succeeded)
                 return;
 
-            var connectors = res.Collider.Entity.GetAll<Connector>();
+            var connector = SearchCollision<Connector>(res);
+            if(connector != null) 
+                tool.Click(connector);
+            var interactable = SearchCollision<Interactable>(res);
+            interactable?.Interact();
+        }
+        private T SearchCollision<T>(HitResult res) where T : EntityComponent
+        {
+            var connectors = res.Collider.Entity.GetAll<T>();
             if (!connectors.Any())
-                return;
+                return null;
             var enumerator = connectors.GetEnumerator();
             enumerator.MoveNext();
-            Connector connector = enumerator.Current;
-            tool.Click(connector);
+            return enumerator.Current;
         }
         public static (HitResult, Vector3) ScreenPositionToWorldPositionRaycast(Vector2 screenPos, CameraComponent camera, Simulation simulation)
         {

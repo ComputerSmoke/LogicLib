@@ -251,8 +251,6 @@ Hierarchy:
                         Model: 9f65fae1-5ea6-4bcc-ae6c-fd35519c8d73:Gates/models/or
                         Materials:
                             0f49614ced1d26953e594891aea5cb63~0: 83484fde-18d6-441f-8a78-ccf0cd4fa6e4:GateResources/materials/or
-                    f4402aef8673245e4064cb051c59ab67: !LogicLib.Gates.OrGate,LogicLib
-                        Id: aedc9dff-6375-41a4-a2fb-54a4f3702eb5
                     27eb115823065a27a244b0ca2589f260: !RigidbodyComponent
                         Id: 7282ff4c-4b6a-4acd-9071-350507e80ea7
                         CanSleep: false
@@ -275,6 +273,8 @@ Hierarchy:
                                 Size: {X: 0.25, Y: 0.05, Z: 0.2}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    52fdfb752fe5a1c12ba47d92a0f015ca: !LogicLib.Gates.Duo.Bitwise.OrGate,LogicLib
+                        Id: 86ea0907-9135-4f8e-9977-7b195cf4bcd9
         -   Folder: null
             Entity:
                 Id: fe3dd239-8303-4312-9fce-0cdf5bbd19a8

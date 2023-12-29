@@ -7,6 +7,7 @@ using Valve.VR;
 
 namespace LogicLib.Gates.Connectors
 {
+    public class NullGateException(string msg) : Exception(msg);
     public class InputConnector : Connector
     {
         //Connect and tick gate.
@@ -26,6 +27,12 @@ namespace LogicLib.Gates.Connectors
             if (Connected == null)
                 return 0;
             return Connected.Read();
+        }
+        public override void Start()
+        {
+            base.Start();
+            if (gate == null)
+                throw new NullGateException("Input connector must have gate in parent entity.");
         }
     }
 }

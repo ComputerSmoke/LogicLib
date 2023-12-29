@@ -251,8 +251,6 @@ Hierarchy:
                         Model: 9f65fae1-5ea6-4bcc-ae6c-fd35519c8d73:Gates/models/or
                         Materials:
                             0f49614ced1d26953e594891aea5cb63~0: 09085c2d-1f22-4d72-a300-ec27be9539a4:GateResources/materials/nand
-                    129026ba1e718e41f405d37e1d1fa7af: !LogicLib.Gates.NandGate,LogicLib
-                        Id: 8992a3c2-d7a4-4620-92fc-042694f9004c
                     7b8e438aa28595c22b9bd1b54bfec446: !RigidbodyComponent
                         Id: 3424b6c8-9028-44cb-9609-463851ba4425
                         CanSleep: false
@@ -275,6 +273,8 @@ Hierarchy:
                                 Size: {X: 0.25, Y: 0.05, Z: 0.2}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    7969362f2930a7fb7b48da83df3c7801: !LogicLib.Gates.Duo.Bitwise.NandGate,LogicLib
+                        Id: 89854708-8d00-41cf-92e8-ff9baed48841
         -   Folder: null
             Entity:
                 Id: d8d298ce-a566-477a-8810-1687e53785e9

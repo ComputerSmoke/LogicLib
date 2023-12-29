@@ -43,11 +43,7 @@ namespace LogicLib.Gates.Connectors
         private Color4 GetColor()
         {
             long value = Read();
-            if (value == 0)
-                return new Color4(1, 0, 0);
-            else if (value == 1)
-                return new Color4(0, 1, 0);
-            return new Color4(0, 0, 1);
+            return (value & 1) == 1 ? new Color4(0, 1, 0) : new Color4(1, 0, 0);
         }
         public override void Disconnect()
         {

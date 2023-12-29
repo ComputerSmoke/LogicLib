@@ -22,7 +22,7 @@ namespace LogicLib.Devices
         }
         public override void GateChange(Gate gate)
         {
-            var color = gate.State != 0 ? new Color3(0, 255, 0) : new Color3(255, 0, 0);
+            var color = (gate.State & 1) == 1 ? new Color3(0, 255, 0) : new Color3(255, 0, 0);
             lightComponent.SetColor(color);
         }
     }
