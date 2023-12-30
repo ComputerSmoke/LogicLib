@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Vortice.Vulkan;
 using Stride.Animations;
 
-namespace LogicLib.Devices
+namespace LogicLib.Devices.Input
 {
     public class Lever : Interactable
     {

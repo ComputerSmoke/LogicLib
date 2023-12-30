@@ -1,0 +1,23 @@
+!Model
+Id: ad23cbbb-d412-48b2-a7c0-85e14623cd2b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/deviceModels/gauge.fbx
+Skeleton: 8ec4149b-e762-4a38-a702-3c5cf6e77ed9:Devices/models/Output/gauge Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    22ada6815001e0b633a42800eb1238a4:
+        Name: Material.007
+        MaterialInstance:
+            Material: 92ed829a-a930-4c52-998a-a244b8c79a96:Devices/models/Output/Material.007
+    842f1afedb40f2c4f8c785f82f322707:
+        Name: Material.006
+        MaterialInstance:
+            Material: f837965e-3fb2-415b-8dfb-354da895db09:Devices/models/Output/Material.006
+    a55e0ce67854967d640ad23423e35379:
+        Name: Material.005
+        MaterialInstance:
+            Material: c7b5b27c-2bbf-4a0b-8ca4-4fe6c39fc81e:Devices/models/Output/Material.005
+Modifiers: {}
+~SourceHashes:
+    e6ba788eacd91ee8e6b4fd0a52011522~../../../../Resources/deviceModels/gauge.fbx: ece60921a46b1d77324bb8de5ec7d975

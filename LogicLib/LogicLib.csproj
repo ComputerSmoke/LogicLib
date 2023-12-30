@@ -13,4 +13,8 @@
 	<PackageReference Include="Stride.Particles" Version="4.2.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Comrade1\StrideUtils\StrideUtils.csproj" />
+  </ItemGroup>
+
 </Project>

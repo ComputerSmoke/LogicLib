@@ -8,16 +8,14 @@ using System.Threading.Tasks;
 using Stride.Core.Mathematics;
 using LogicLib.Gates.Solo;
 
-namespace LogicLib.Devices
+namespace LogicLib.Devices.Output
 {
     public class IndicatorDevice : Device
     {
-        private BufferGate gate;
         private LightComponent lightComponent;
         public override void Start()
         {
             base.Start();
-            gate = Entity.FindInChild<BufferGate>();
             lightComponent = Entity.FindInChild<LightComponent>();
         }
         public override void GateChange(Gate gate)

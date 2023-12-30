@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LogicLib.Devices
+namespace LogicLib.Devices.Input
 {
     public abstract class Interactable : Device
     {

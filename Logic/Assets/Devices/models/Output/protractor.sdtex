@@ -1,0 +1,8 @@
+!Texture
+Id: f92138ea-7249-48ab-ba32-435b7f5eecd5
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/protractor.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+    PremultiplyAlpha: false

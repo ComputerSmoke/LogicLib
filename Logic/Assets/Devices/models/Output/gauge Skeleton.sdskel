@@ -1,0 +1,13 @@
+!Skeleton
+Id: 8ec4149b-e762-4a38-a702-3c5cf6e77ed9
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/deviceModels/gauge.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    9b6d1bf0416eea31e2681ebfd5f186e2: {Name: RootNode, Depth: 0}
+    d4ff7139a7ed1d94d973180680e1c0d3: {Name: Body, Depth: 1}
+    5a8a272477a8197a27faf1301e3aff62: {Name: NeedleWheel, Depth: 2}
+    65b65d28af8c66c04affdc5277dddef9: {Name: Needle, Depth: 3}
+~SourceHashes:
+    68a55ef28ab8256e6a15dc5fccedbce2~../../../../Resources/deviceModels/gauge.fbx: ece60921a46b1d77324bb8de5ec7d975

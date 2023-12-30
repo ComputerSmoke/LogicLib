@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Stride.Animations;
 
-namespace LogicLib.Devices
+namespace LogicLib.Devices.Input
 {
     public class Button : Interactable
     {
@@ -18,7 +18,7 @@ namespace LogicLib.Devices
             output = Entity.FindInChild<OneTickGate>();
         }
 
-        public override void GateChange(Gate gate) {}
+        public override void GateChange(Gate gate) { }
 
         public override void Interact()
         {

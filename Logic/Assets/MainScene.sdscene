@@ -16,6 +16,7 @@ Hierarchy:
         - ref!! a645ba5f-976c-4c19-b1e8-6d0b09b0179b
         - ref!! 1a5c3317-cd8c-4ec1-bc5a-9451eacc2e44
         - ref!! 99c9cf27-d8d8-43fe-8210-3a99ddf202ca
+        - ref!! ecc472d7-f9b6-4de2-a1b6-b96824aedb56
     Parts:
         -   Entity:
                 Id: 030b384f-d4f2-46cf-b9b4-55572bfcbc14
@@ -62,6 +63,19 @@ Hierarchy:
                 BasePartId: 29270558-4b42-4840-b73a-feefaa053a76
                 InstanceId: e44efb57-6181-4b4d-b05e-e8a2110082ec
         -   Entity:
+                Id: 11bb3540-e207-4d2e-ad52-40834627ab44
+                Name: Input
+                Components:
+                    e1c438e9d3cbe28b104fcb8add89f93f: !TransformComponent
+                        Id: 8997081a-0fe0-41e1-adb8-1c4b29bcf478
+                        Position: {X: -4.4234287E-09, Y: -0.0033972445, Z: -0.037106406}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 0.75, Y: 0.75, Z: 0.4}
+                        Children:
+                            3740ece3d80a2ca9f05ed7333b2b1f18: ref!! 208f8df3-a8d5-4b77-a671-f564acedbc94
+                    b0e893a7019248809a217474395af190: !LogicLib.Gates.Solo.BufferGate,LogicLib
+                        Id: e2023a30-7af7-4b57-ab77-b48ea9eee40a
+        -   Entity:
                 Id: 1a5c3317-cd8c-4ec1-bc5a-9451eacc2e44
                 Name: button
                 Components:
@@ -103,12 +117,12 @@ Hierarchy:
                                 Size: {X: 0.3, Y: 0.04, Z: 0.3}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    779f1b3891ae95fab239fd6166c9cf2c: !LogicLib.Devices.Button,LogicLib
-                        Id: 25949c41-35ee-465b-8c21-42981d438d13
                     25595b7a2139bd024310779342c703c8: !AnimationComponent
                         Id: 3c2297e3-b38d-4c1c-b972-18f8466ec585
                         Animations:
                             ebd57a4fae383c19333edd6a9dbd7d69~interact: 5ab4a8c8-f1b5-4e49-876f-882510b1550c:Devices/models/button_2
+                    76b37bd8cec948e553bb289eba776abf: !LogicLib.Devices.Input.Button,LogicLib
+                        Id: e182194b-455a-43d6-9c51-d5b6b21771e0
             Base:
                 BasePartAsset: ea884f6e-58f5-4550-a672-e401751cdf3a:Devices/prefabs/button
                 BasePartId: ed24245e-9a34-4ee6-8c77-3f81d4c81f69
@@ -566,6 +580,49 @@ Hierarchy:
                                 BiasParameters: {}
                         Intensity: 20.0
         -   Entity:
+                Id: 609f6fe3-3cab-4f9c-a3b6-4f322e725bb0
+                Name: Input
+                Components:
+                    fed4d5e924410676db8692ff92557a58: !TransformComponent
+                        Id: 208f8df3-a8d5-4b77-a671-f564acedbc94
+                        Position*: {X: -6.3088834E-10, Y: -0.005292275, Z: -1.0514808E-09}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    085191278eb245c21f6e3f1dcef5c981: !ModelComponent
+                        Id: 2ee14e63-206e-4b82-b35f-984d7359252b
+                        Model: 46892274-a637-4430-9a85-b482cae064f9:Gates/models/Connector
+                        Materials:
+                            e6f8bbf8b44033be361574cb6730a20f~0: 5ad98204-5c4e-4844-b1c5-0e853becbc1c:GateResources/materials/ConnectorIn
+                    02f621b5858381a9babd21e8401a801d: !RigidbodyComponent
+                        Id: 704ef382-f315-414f-9c3f-78f146f1161b
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            cada2c28944ca0a91d4f2848942fe833: !CylinderColliderShapeDesc
+                                Height: 0.05
+                                Radius: 0.0125
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
+                        Id: a1ffcbb8-1ead-4bfc-a7c6-418cf31c7a97
+            Base:
+                BasePartAsset: 613b9a34-7ea2-4faf-97d2-062686a7f696:Gates/prefabs/Input
+                BasePartId: 7d220887-e62e-4efb-b855-b166a3e1f717
+                InstanceId: 3dd54f46-e333-4fab-bda4-d8c0786c0dd4
+        -   Entity:
                 Id: 6328fb60-2e43-4e2c-b749-2a6527baf790
                 Name: NotGate
                 Components:
@@ -903,8 +960,8 @@ Hierarchy:
                         Id: ff86380d-35f5-4ca3-88ff-51d90925b51c
                         Model: 15063c51-1570-440b-847d-916d624c2752:Sphere
                         Materials: {}
-                    73c4f7cf82a21b82e2e6f9d35b0603ba: !LogicLib.Devices.IndicatorDevice,LogicLib
-                        Id: edee2371-a4d6-4a27-a303-b175f42bcd8f
+                    5da10416317cbc3c00d773f776c70e31: !LogicLib.Devices.Output.IndicatorDevice,LogicLib
+                        Id: 5445e819-8a89-488e-a77c-ffd531440e72
         -   Entity:
                 Id: 99c9cf27-d8d8-43fe-8210-3a99ddf202ca
                 Name: OrGate
@@ -967,8 +1024,6 @@ Hierarchy:
                         Id: 88d94b07-390f-4001-ba39-8b121c1f1c08
                         Model: 55f9367e-4526-491b-a3e6-3db6f8d281eb:Devices/models/switch
                         Materials: {}
-                    e46b7c289bb95e51be34b1b2f57c273c: !LogicLib.Devices.Lever,LogicLib
-                        Id: ddca10d6-b30e-41e5-839d-c0147cbc547e
                     46e232a833e83facdfabb3160102cc6d: !RigidbodyComponent
                         Id: faf83c0e-03ee-4d93-b888-15a6e64b34fb
                         CanSleep: false
@@ -1000,6 +1055,8 @@ Hierarchy:
                         Id: 70012402-4739-4318-b276-52b7cf146f8e
                         Animations:
                             304d7fdd31294e958e7f5dd719a8bb0c~interact: 2449db97-1b4a-45f6-859c-9c9fa5c07d91:Devices/models/switch_2
+                    a924ed0ff6d0d1ad382d88c74b7e6cca: !LogicLib.Devices.Input.Lever,LogicLib
+                        Id: 58c385e5-0345-40d1-929c-1752ad107281
             Base:
                 BasePartAsset: e798ba52-ebb7-4b4e-9826-b162d8aa0d87:Devices/prefabs/switch
                 BasePartId: 63e1fb40-356c-4ffa-9b12-618e6d66e985
@@ -1177,6 +1234,23 @@ Hierarchy:
                 BasePartAsset: ea884f6e-58f5-4550-a672-e401751cdf3a:Devices/prefabs/button
                 BasePartId: 0868e3fe-ee3e-4380-af80-b3fceaaed261
                 InstanceId: c0de5814-3e8a-4061-9762-e33e0f9c6f94
+        -   Entity:
+                Id: ecc472d7-f9b6-4de2-a1b6-b96824aedb56
+                Name: gauge
+                Components:
+                    b7b5a5a99d00723318998dcfb6f23257: !TransformComponent
+                        Id: 7874162b-d21a-4655-b0ba-7cfd0df2a8c9
+                        Position: {X: 1.3587949, Y: 1.2243797, Z: 3.6613204}
+                        Rotation: {X: 0.49999997, Y: 0.49999997, Z: -0.49999997, W: 0.49999997}
+                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Children:
+                            4647da350bac9172e445e03c9a80b205: ref!! 8997081a-0fe0-41e1-adb8-1c4b29bcf478
+                    f0eef072fab9a14ef85fe0b65900146e: !ModelComponent
+                        Id: 976efc31-97e7-4833-afb8-20c3fa0708be
+                        Model: ad23cbbb-d412-48b2-a7c0-85e14623cd2b:Devices/models/Output/gauge
+                        Materials: {}
+                    07b9174ea4342b9e01072cc5e8cfbfd9: !LogicLib.Devices.Output.Gauge,LogicLib
+                        Id: 240581a5-35cc-4210-8779-d1a52716f87b
         -   Entity:
                 Id: ee22cbd8-bc32-4887-8862-d90b92271022
                 Name: Output

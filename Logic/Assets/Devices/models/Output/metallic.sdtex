@@ -1,0 +1,8 @@
+!Texture
+Id: c1c0b5b8-c17d-4b99-9c84-3e462aea4953
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/deviceModels/textures/metallic.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+    PremultiplyAlpha: false
