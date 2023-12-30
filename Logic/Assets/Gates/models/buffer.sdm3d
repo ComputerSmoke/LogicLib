@@ -9,7 +9,7 @@ Materials:
     3d3fee6672e4110112da847d7b0fae6f:
         Name: Material
         MaterialInstance:
-            Material: 513ebebf-ef23-4526-a6e2-15cd2587731c:GateResources/materials/buffer
+            Material: 513ebebf-ef23-4526-a6e2-15cd2587731c:GateResources/materials/bitwise/buffer
 Modifiers: {}
 ~SourceHashes:
     9e7a88ec3b99f8a2275b53f37e145d36~../../GateResources/gateModels/buffer.fbx: 2f7f369ac0ea80a0dd345bad0b388892

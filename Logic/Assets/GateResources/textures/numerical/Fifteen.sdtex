@@ -1,0 +1,7 @@
+!Texture
+Id: acaed724-38e8-4ff6-b592-6ac503ca435b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/gateModels/numeric/Fifteen.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

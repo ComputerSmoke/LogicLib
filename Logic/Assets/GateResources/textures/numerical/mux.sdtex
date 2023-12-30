@@ -1,0 +1,7 @@
+!Texture
+Id: 78fa2fad-bac7-413f-a9ac-dfccdd9180cb
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/gateModels/numeric/mux.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

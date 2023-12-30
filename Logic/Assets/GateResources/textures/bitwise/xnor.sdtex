@@ -1,0 +1,7 @@
+!Texture
+Id: 64f3940f-bdc3-441d-b5ec-f615894c60b2
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../gateImages/xnor.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

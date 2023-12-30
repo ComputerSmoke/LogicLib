@@ -1,0 +1,7 @@
+!Texture
+Id: 961c2f84-0b2d-4320-9d97-8cdc85c963c7
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/gateModels/numeric/Seven.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

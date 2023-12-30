@@ -1,8 +1,0 @@
-!Texture
-Id: 7446a038-b6c3-499f-9987-f372181fe380
-SerializedVersion: {Stride: 2.0.0.0}
-Tags: []
-Source: !file ../gateImages/buffer.png
-Type: !ColorTextureType
-    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
-    PremultiplyAlpha: false

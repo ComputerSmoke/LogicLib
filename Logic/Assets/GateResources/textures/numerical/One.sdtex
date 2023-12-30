@@ -1,0 +1,7 @@
+!Texture
+Id: 4524ce52-4821-44ee-a217-b1c1c4dadfae
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/gateModels/numeric/One.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

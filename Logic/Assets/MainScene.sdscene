@@ -17,6 +17,7 @@ Hierarchy:
         - ref!! 1a5c3317-cd8c-4ec1-bc5a-9451eacc2e44
         - ref!! 99c9cf27-d8d8-43fe-8210-3a99ddf202ca
         - ref!! ecc472d7-f9b6-4de2-a1b6-b96824aedb56
+        - ref!! c808b639-81e9-4031-9e9a-a04b15e9cd89
     Parts:
         -   Entity:
                 Id: 030b384f-d4f2-46cf-b9b4-55572bfcbc14
@@ -59,7 +60,7 @@ Hierarchy:
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
-                BasePartAsset: d3def151-029d-48f4-9626-b8da6cccf7bc:Gates/prefabs/BufferGate
+                BasePartAsset: d3def151-029d-48f4-9626-b8da6cccf7bc:Gates/prefabs/bitwise/BufferGate
                 BasePartId: 29270558-4b42-4840-b73a-feefaa053a76
                 InstanceId: e44efb57-6181-4b4d-b05e-e8a2110082ec
         -   Entity:
@@ -168,7 +169,7 @@ Hierarchy:
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: 7aafd297-45d8-4a19-a091-df691fb4162f
             Base:
-                BasePartAsset: c1cab659-ed0f-4d99-9403-b1fad25632f2:Gates/prefabs/NotGate
+                BasePartAsset: c1cab659-ed0f-4d99-9403-b1fad25632f2:Gates/prefabs/bitwise/NotGate
                 BasePartId: ba9215ff-b638-4946-a69b-26e90324f8ae
                 InstanceId: 2da291bb-37a4-4008-b072-fdf627a4c0f3
         -   Entity:
@@ -211,7 +212,7 @@ Hierarchy:
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: 1112b4bf-c9cd-4ff4-b2e9-71070de55b1b
             Base:
-                BasePartAsset: ecbd872d-808f-439e-ab1b-9f579acff771:Gates/prefabs/OrGate
+                BasePartAsset: ecbd872d-808f-439e-ab1b-9f579acff771:Gates/prefabs/bitwise/OrGate
                 BasePartId: 2729f790-d014-4643-960b-86f7c3909fc0
                 InstanceId: 1ce50197-c684-4783-9ce7-e378a660a20a
         -   Entity:
@@ -296,7 +297,7 @@ Hierarchy:
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: cd326344-0439-41c5-8d8f-69134166fd08
             Base:
-                BasePartAsset: d3def151-029d-48f4-9626-b8da6cccf7bc:Gates/prefabs/BufferGate
+                BasePartAsset: d3def151-029d-48f4-9626-b8da6cccf7bc:Gates/prefabs/bitwise/BufferGate
                 BasePartId: 82089e62-6736-4ece-90f3-9d2d61314510
                 InstanceId: e44efb57-6181-4b4d-b05e-e8a2110082ec
         -   Entity:
@@ -353,7 +354,7 @@ Hierarchy:
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: 9db97fd2-714c-4eab-bcd3-63071e096c37
             Base:
-                BasePartAsset: ecbd872d-808f-439e-ab1b-9f579acff771:Gates/prefabs/OrGate
+                BasePartAsset: ecbd872d-808f-439e-ab1b-9f579acff771:Gates/prefabs/bitwise/OrGate
                 BasePartId: 6f0e177b-fdcb-4363-9fcb-2f53940d7361
                 InstanceId: 1ce50197-c684-4783-9ce7-e378a660a20a
         -   Entity:
@@ -551,7 +552,7 @@ Hierarchy:
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: ff4dafeb-84f9-45c2-bf57-7d97d58e2b3d
             Base:
-                BasePartAsset: c1cab659-ed0f-4d99-9403-b1fad25632f2:Gates/prefabs/NotGate
+                BasePartAsset: c1cab659-ed0f-4d99-9403-b1fad25632f2:Gates/prefabs/bitwise/NotGate
                 BasePartId: 1275e049-4f4e-4ea8-bb22-7d95d9f67c35
                 InstanceId: 2da291bb-37a4-4008-b072-fdf627a4c0f3
         -   Entity:
@@ -638,7 +639,7 @@ Hierarchy:
                         Id: 0ce91acb-c182-4e9d-8086-4be359aa1e1f
                         Model: 66b8e565-b82c-4143-a0ba-a4c466a4ceb0:Gates/models/buffer
                         Materials:
-                            66d1bdf6052113ddf13c14e488e9de16~0: 369f93fb-785a-4607-9e92-09aabdad7e88:GateResources/materials/not
+                            66d1bdf6052113ddf13c14e488e9de16~0: 369f93fb-785a-4607-9e92-09aabdad7e88:GateResources/materials/bitwise/not
                     c01367f485f502162ad6614ac5b17a37: !LogicLib.Gates.Solo.NotGate,LogicLib
                         Id: 656084fb-e60a-49ba-9c61-87453cbc4ac2
                     16db4ab623c0a33d951954f77d8d4301: !RigidbodyComponent
@@ -664,7 +665,7 @@ Hierarchy:
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
-                BasePartAsset: c1cab659-ed0f-4d99-9403-b1fad25632f2:Gates/prefabs/NotGate
+                BasePartAsset: c1cab659-ed0f-4d99-9403-b1fad25632f2:Gates/prefabs/bitwise/NotGate
                 BasePartId: 6b978add-b3e8-456f-9a64-7ce328ecd2dc
                 InstanceId: 2da291bb-37a4-4008-b072-fdf627a4c0f3
         -   Entity:
@@ -940,7 +941,7 @@ Hierarchy:
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: 9db51216-e792-4df5-80bf-fe1fcea2d942
             Base:
-                BasePartAsset: d3def151-029d-48f4-9626-b8da6cccf7bc:Gates/prefabs/BufferGate
+                BasePartAsset: d3def151-029d-48f4-9626-b8da6cccf7bc:Gates/prefabs/bitwise/BufferGate
                 BasePartId: cc1d1493-cd2b-4c15-a9df-ee1b8d010805
                 InstanceId: e44efb57-6181-4b4d-b05e-e8a2110082ec
         -   Folder: null
@@ -980,7 +981,7 @@ Hierarchy:
                         Id: 03e405ec-1909-4392-b3c7-0dddda135ecb
                         Model: 9f65fae1-5ea6-4bcc-ae6c-fd35519c8d73:Gates/models/or
                         Materials:
-                            0f49614ced1d26953e594891aea5cb63~0: 83484fde-18d6-441f-8a78-ccf0cd4fa6e4:GateResources/materials/or
+                            0f49614ced1d26953e594891aea5cb63~0: 83484fde-18d6-441f-8a78-ccf0cd4fa6e4:GateResources/materials/bitwise/or
                     27eb115823065a27a244b0ca2589f260: !RigidbodyComponent
                         Id: e554dbf9-d6d0-4f4a-877d-6e2a0d08046c
                         CanSleep: false
@@ -1006,7 +1007,7 @@ Hierarchy:
                     52fdfb752fe5a1c12ba47d92a0f015ca: !LogicLib.Gates.Duo.Bitwise.OrGate,LogicLib
                         Id: 9735db1a-614c-4f20-9766-d9211eb0449a
             Base:
-                BasePartAsset: ecbd872d-808f-439e-ab1b-9f579acff771:Gates/prefabs/OrGate
+                BasePartAsset: ecbd872d-808f-439e-ab1b-9f579acff771:Gates/prefabs/bitwise/OrGate
                 BasePartId: be6658a1-01c9-419b-a4e3-adcb3ecb4968
                 InstanceId: 1ce50197-c684-4783-9ce7-e378a660a20a
         -   Entity:
@@ -1197,9 +1198,24 @@ Hierarchy:
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: 024dd5d7-bcc5-4d7f-bb60-73dbf208fa27
             Base:
-                BasePartAsset: ecbd872d-808f-439e-ab1b-9f579acff771:Gates/prefabs/OrGate
+                BasePartAsset: ecbd872d-808f-439e-ab1b-9f579acff771:Gates/prefabs/bitwise/OrGate
                 BasePartId: fe3dd239-8303-4312-9fce-0cdf5bbd19a8
                 InstanceId: 1ce50197-c684-4783-9ce7-e378a660a20a
+        -   Entity:
+                Id: c808b639-81e9-4031-9e9a-a04b15e9cd89
+                Name: One
+                Components:
+                    04fd4da6c247ac58ec2a2f93bc824adc: !TransformComponent
+                        Id: 0fecc581-5081-4c75-8db5-74bbfee4df13
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    81d6684bfc9f33fd89f6736216b739c4: !ModelComponent
+                        Id: 34aebc4b-972a-49e8-acbf-1db32f83d689
+                        Model: 66b8e565-b82c-4143-a0ba-a4c466a4ceb0:Gates/models/buffer
+                        Materials:
+                            a9b841abe58be3430258284f23a5fc84~0: 59b44a2f-0983-4bc2-bcdc-bccf999e4d9e:GateResources/materials/numerical/one
         -   Entity:
                 Id: db91ec24-e0a2-46f8-90d2-8abe270aa987
                 Name: Output
@@ -1524,7 +1540,7 @@ Hierarchy:
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: d6b6f5d3-7cde-4e78-ab00-0bc1b20f8681
             Base:
-                BasePartAsset: ecbd872d-808f-439e-ab1b-9f579acff771:Gates/prefabs/OrGate
+                BasePartAsset: ecbd872d-808f-439e-ab1b-9f579acff771:Gates/prefabs/bitwise/OrGate
                 BasePartId: 6b9b3418-deab-42bf-823a-320e6a9306bf
                 InstanceId: 1ce50197-c684-4783-9ce7-e378a660a20a
         -   Entity:

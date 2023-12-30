@@ -1,0 +1,7 @@
+!Texture
+Id: c4905709-945b-4bd2-812b-e20e26196595
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/gateModels/numeric/Multiplication.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
