@@ -1,112 +1,48 @@
 !PrefabAsset
-Id: d3def151-029d-48f4-9626-b8da6cccf7bc
+Id: 514d7a7b-d982-4392-8450-823951ea3462
 SerializedVersion: {Stride: 3.1.0.1}
 Tags: []
 Hierarchy:
     RootParts:
-        - ref!! 29270558-4b42-4840-b73a-feefaa053a76
+        - ref!! 80e87e1b-04e9-4b54-86b5-5bfa840f4603
     Parts:
-        -   Entity:
-                Id: 29270558-4b42-4840-b73a-feefaa053a76
-                Name: buffer
+        -   Folder: null
+            Entity:
+                Id: 80e87e1b-04e9-4b54-86b5-5bfa840f4603
+                Name: SevenGate
                 Components:
-                    d9c47eba3211679c2f807e22b82b2f30: !TransformComponent
-                        Id: 4766c42b-e4ef-4959-8b37-3bb374fa14e8
+                    04fd4da6c247ac58ec2a2f93bc824adc: !TransformComponent
+                        Id: 7059db73-bc9c-4175-9f82-5a8a3a31a902
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
-                            beed208d6fc7323f07748293bc29b027: ref!! b73eb57c-1afc-41c5-84b3-bbef6b61ae4b
-                            2319fd25e0498434fdf2f783eb1f5a88: ref!! 4fc96e06-fc6f-459e-9666-5cd2933f65b5
-                    6b594972a917561d43c161c8f22dd153: !ModelComponent
-                        Id: 28348e8e-549e-421d-b196-4ce9b253c806
+                            e67e709bdba8a9c9275c9dc2956b488a: ref!! 9dc72fd6-2f26-4b12-8cce-dd2f64a969b3
+                    81d6684bfc9f33fd89f6736216b739c4: !ModelComponent
+                        Id: d2e43557-b456-4b66-9d85-dad6fd9a2743
                         Model: 66b8e565-b82c-4143-a0ba-a4c466a4ceb0:Gates/models/buffer
-                        Materials: {}
-                    baaf57f8bd19dc79db50f1150bc7d03c: !LogicLib.Gates.Solo.BufferGate,LogicLib
-                        Id: 5c517aea-c86a-4048-b2ed-2fafa2386993
-                    3084b14301845ff09830e29285b4c79a: !RigidbodyComponent
-                        Id: 151ee791-8377-4120-adcf-36b2848409c5
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        IsTrigger: true
-                        IsKinematic: true
-                        Mass: 1.0
-                        LinearDamping: 0.0
-                        AngularDamping: 0.0
-                        OverrideGravity: false
-                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
-                        NodeName: null
-                        ColliderShapes:
-                            a81d75bab9ff9ce6cdadca4b39b848a6: !BoxColliderShapeDesc
-                                Is2D: false
-                                Size: {X: 0.2, Y: 0.05, Z: 0.2}
-                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-        -   Entity:
-                Id: 82089e62-6736-4ece-90f3-9d2d61314510
-                Name: Input
-                Components:
-                    fed4d5e924410676db8692ff92557a58: !TransformComponent
-                        Id: b73eb57c-1afc-41c5-84b3-bbef6b61ae4b
-                        Position*: {X: 0.0, Y: 0.0, Z: 0.11}
-                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    085191278eb245c21f6e3f1dcef5c981: !ModelComponent
-                        Id: 82b89520-5362-41f3-a294-b17d1f137c70
-                        Model: 46892274-a637-4430-9a85-b482cae064f9:Gates/models/Connector
                         Materials:
-                            e6f8bbf8b44033be361574cb6730a20f~0: 5ad98204-5c4e-4844-b1c5-0e853becbc1c:GateResources/materials/ConnectorIn
-                    02f621b5858381a9babd21e8401a801d: !RigidbodyComponent
-                        Id: b425d680-b913-4c4c-9267-906c8e52636b
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        IsTrigger: true
-                        IsKinematic: true
-                        Mass: 1.0
-                        LinearDamping: 0.0
-                        AngularDamping: 0.0
-                        OverrideGravity: false
-                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
-                        NodeName: null
-                        ColliderShapes:
-                            cada2c28944ca0a91d4f2848942fe833: !CylinderColliderShapeDesc
-                                Height: 0.05
-                                Radius: 0.0125
-                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
-                        Id: e1ac7e99-d8e1-4054-984e-7678b70b8924
-                        Channel: 0
-            Base:
-                BasePartAsset: 613b9a34-7ea2-4faf-97d2-062686a7f696:Gates/prefabs/Input
-                BasePartId: 7d220887-e62e-4efb-b855-b166a3e1f717
-                InstanceId: de00052e-0985-4afc-ac50-5f4703d684a6
+                            a9b841abe58be3430258284f23a5fc84~0: afea5f18-97ae-48dd-91aa-5930471a0840:GateResources/materials/numerical/seven
+                    8f3dd36eaf676456971aa58d2b71584b: !LogicLib.Gates.ConstantGate,LogicLib
+                        Id: 20d2b997-81d2-4202-a0ab-df46ddda70c4
+                        ConstantValue: 7
         -   Entity:
-                Id: cc1d1493-cd2b-4c15-a9df-ee1b8d010805
+                Id: b687cde4-ed89-4a15-b9d6-29d405270bed
                 Name: Output
                 Components:
                     fed4d5e924410676db8692ff92557a58: !TransformComponent
-                        Id: 4fc96e06-fc6f-459e-9666-5cd2933f65b5
-                        Position*: {X: 0.0, Y: 0.0, Z: -0.11}
+                        Id: 9dc72fd6-2f26-4b12-8cce-dd2f64a969b3
+                        Position*: {X: 0.0, Y: 0.0, Z: -0.1}
                         Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     085191278eb245c21f6e3f1dcef5c981: !ModelComponent
-                        Id: bf090a24-456b-4515-9994-ab58b1fa503b
+                        Id: 71d004e8-3a95-40d3-b150-b9009261528b
                         Model: 46892274-a637-4430-9a85-b482cae064f9:Gates/models/Connector
                         Materials:
                             47a2a2f096c8810476ce7c4814b4ade8~0: bcb11bbb-76d9-477b-a9b0-60066804feef:GateResources/materials/ConnectorOut
                     f2253a20d964e67f7b6e7c24c7d91679: !ParticleSystemComponent
-                        Id: 2b50c5c2-117f-4a03-874f-99f64c0da92b
+                        Id: 9737cf7d-523e-4913-9723-462009cab106
                         Enabled: false
                         Control:
                             ResetSeconds: 0.0
@@ -201,7 +137,7 @@ Hierarchy:
                                             SeedOffset: 0
                                     Updaters: {}
                     02f621b5858381a9babd21e8401a801d: !RigidbodyComponent
-                        Id: a732c081-5c4d-40bf-ab2b-416a86d1e173
+                        Id: a676ddb9-d62f-4b94-b176-8d0c1bdd1bc1
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -223,8 +159,8 @@ Hierarchy:
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
-                        Id: 4e485c09-0231-4795-bc25-6724dc6546d3
+                        Id: 4c38618e-c0b8-4dc9-b515-e40e3a78a6e5
             Base:
                 BasePartAsset: 30223cf5-9c47-41a8-8712-67c6a7e29550:Gates/prefabs/Output
                 BasePartId: 82431641-5af6-484e-81c3-8c74a352d9ba
-                InstanceId: 0ab3aa9c-2973-4627-b3a7-e6e56d3b7f3a
+                InstanceId: d4a3ef06-d6a6-4b8d-9389-d44d4de8d45e

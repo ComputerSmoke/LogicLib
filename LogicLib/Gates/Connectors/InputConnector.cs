@@ -10,6 +10,7 @@ namespace LogicLib.Gates.Connectors
     public class NullGateException(string msg) : Exception(msg);
     public class InputConnector : Connector
     {
+        public int Channel { get; set; }
         //Connect and tick gate.
         public override bool Connect(Connector connector)
         {

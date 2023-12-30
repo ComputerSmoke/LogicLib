@@ -31,6 +31,7 @@ namespace LogicLib.Gates
                 else
                     outputs.Add((OutputConnector)connector);
             }
+            inputs.Sort((InputConnector c1, InputConnector c2) => c1.Channel - c2.Channel);
         }
         //Update next state of gate based on State of inputs, which it will go to when UpdateState called
         public void UpdateNextState()
