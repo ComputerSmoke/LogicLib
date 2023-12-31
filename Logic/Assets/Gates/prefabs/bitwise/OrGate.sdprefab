@@ -45,7 +45,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: 5b0a88af-8a24-4924-9a07-0d36136fd58c
-                        Startup: {}
                         Channel: 0
                         InitialConnector: null
             Base:
@@ -186,7 +185,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: a9b7d899-84be-459a-8784-5338b90add54
-                        Startup: {}
             Base:
                 BasePartAsset: 30223cf5-9c47-41a8-8712-67c6a7e29550:Gates/prefabs/Output
                 BasePartId: 82431641-5af6-484e-81c3-8c74a352d9ba
@@ -231,7 +229,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: 744bd9db-c4a6-4837-bed5-3fe0e36145b4
-                        Startup: {}
                         Channel: 0
                         InitialConnector: null
             Base:
@@ -417,7 +414,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: d099cd69-4232-4af5-b70b-ddcbe45db27b
-                        Startup: {}
             Base:
                 BasePartAsset: 30223cf5-9c47-41a8-8712-67c6a7e29550:Gates/prefabs/Output
                 BasePartId: 82431641-5af6-484e-81c3-8c74a352d9ba

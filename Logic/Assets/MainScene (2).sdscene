@@ -18,6 +18,7 @@ Hierarchy:
         - ref!! 99c9cf27-d8d8-43fe-8210-3a99ddf202ca
         - ref!! ecc472d7-f9b6-4de2-a1b6-b96824aedb56
         - ref!! 5b124209-c1a8-4395-8ce8-1809a28de9be
+        - ref!! c877327a-cf57-4e06-9434-78153fb7545f
         - ref!! 190eecae-0d08-420f-9429-f4e6118f9ecf
         - ref!! 66fa6e4c-9c06-4be9-9a7c-dafe79d10c19
         - ref!! e75eedb7-a880-4eab-b98f-42e26ab03fbf
@@ -27,6 +28,7 @@ Hierarchy:
         - ref!! bf0c3a5f-0bd4-4a0c-988b-5fbd622f9f2f
         - ref!! 55c494ba-ea36-4464-95c4-1dbce352ce57
         - ref!! 55da0869-7e38-4f18-90e6-f4997d0b8300
+        - ref!! 5ab9768e-eb8f-4153-919d-32cf57168a7c
         - ref!! bf756657-e156-4217-b040-ce8a99a716bc
         - ref!! eb59d074-dd73-45c0-9a93-029e3d2c07d1
         - ref!! ba7aac2b-50bf-40d1-b2e2-352a272190ca
@@ -288,7 +290,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: 96cc90fc-b548-4074-a7e6-7fd782a80ab3
-                        Startup: {}
             Base:
                 BasePartAsset: 552383ea-b41b-4fde-8ae5-58929c552401:Gates/prefabs/numerical/constants/FifteenGate
                 BasePartId: e45211fb-32ba-45fc-91d8-5674d69fcc5f
@@ -310,6 +311,23 @@ Hierarchy:
                 BasePartAsset: 1bb67594-b056-4058-9a09-b0976fd2344a:Devices/prefabs/dial
                 BasePartId: 558ee49c-d8e2-4d65-812a-75ce7a539573
                 InstanceId: 890cbca0-76d6-424f-bd0e-4db6c6145c1b
+        -   Entity:
+                Id: 12e3a65d-5b70-4b6b-8424-8bcd1800ad76
+                Name: Input
+                Components:
+                    e1c438e9d3cbe28b104fcb8add89f93f: !TransformComponent
+                        Id: 6a9fdc5d-9643-4f27-85c5-b13ef5c95e8c
+                        Position: {X: -4.4234287E-09, Y: -0.0033972445, Z: -0.037106406}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 0.75, Y: 0.75, Z: 0.4}
+                        Children:
+                            3740ece3d80a2ca9f05ed7333b2b1f18: ref!! d329f99a-86f4-4f07-9935-7688c2d3d8a6
+                    b0e893a7019248809a217474395af190: !LogicLib.Gates.Solo.BufferGate,LogicLib
+                        Id: ba9cea1b-f506-4b76-94ca-f68681765663
+            Base:
+                BasePartAsset: 1bb67594-b056-4058-9a09-b0976fd2344a:Devices/prefabs/dial
+                BasePartId: 558ee49c-d8e2-4d65-812a-75ce7a539573
+                InstanceId: 943b8126-084c-4eed-ac8b-ba1ca7b5c16b
         -   Folder: null
             Entity:
                 Id: 190eecae-0d08-420f-9429-f4e6118f9ecf
@@ -317,7 +335,7 @@ Hierarchy:
                 Components:
                     b7b5a5a99d00723318998dcfb6f23257: !TransformComponent
                         Id: 15beb090-69b9-45ed-921b-3d11b05cd845
-                        Position*: {X: 1.9824846, Y: 1.2243797, Z: 3.6613204}
+                        Position*: {X: 1.9824846, Y: 1.4754578, Z: 3.6613204}
                         Rotation: {X: 0.49999997, Y: 0.49999997, Z: -0.49999997, W: 0.49999997}
                         Scale: {X: 2.0, Y: 2.0, Z: 2.0}
                         Children:
@@ -490,13 +508,29 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: 7aafd297-45d8-4a19-a091-df691fb4162f
-                        Startup: {}
                         Channel: 0
                         InitialConnector: null
             Base:
                 BasePartAsset: c1cab659-ed0f-4d99-9403-b1fad25632f2:Gates/prefabs/bitwise/NotGate
                 BasePartId: ba9215ff-b638-4946-a69b-26e90324f8ae
                 InstanceId: 2da291bb-37a4-4008-b072-fdf627a4c0f3
+        -   Entity:
+                Id: 25fd6f3c-746d-446f-b078-956328e321e8
+                Name: Output
+                Components:
+                    06888f71f6f673c160a8504a819e6dda: !TransformComponent
+                        Id: b798a089-2206-45d1-8b63-3608cb19141f
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            1bd74c013a2226aefea8eb77b7741acf: ref!! 9492f427-0e2d-466c-94da-a1224e9cae81
+                    524b97aa3a78c3337f042196e0d75cc6: !LogicLib.Gates.Settable.SettableGate,LogicLib
+                        Id: ff2e5f6a-3d24-4330-95d4-570cc7b5c167
+            Base:
+                BasePartAsset: 1f9200d3-ce06-4e34-b247-adbf816f67e2:Devices/prefabs/gauges/TotalPressure
+                BasePartId: 5a6620e2-4ee7-4d6d-9ba5-51ab2cb00e80
+                InstanceId: 3727ba6e-8639-43c6-b26d-2b337053e9bb
         -   Entity:
                 Id: 27e26a5c-c11a-4de5-bd81-fda72bf05804
                 Name: Output
@@ -631,7 +665,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: 3c6ea16d-00a1-48fd-84c1-9c039bfa69f9
-                        Startup: {}
             Base:
                 BasePartAsset: 09b445ac-f418-45f5-b9b2-e1b18d0e6b7f:Gates/prefabs/numerical/operators/AdditionGate
                 BasePartId: 229dce4a-91a7-46f3-b77b-60f8115f497d
@@ -675,7 +708,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: 1112b4bf-c9cd-4ff4-b2e9-71070de55b1b
-                        Startup: {}
                         Channel: 0
                         InitialConnector: null
             Base:
@@ -763,7 +795,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: cd326344-0439-41c5-8d8f-69134166fd08
-                        Startup: {}
                         Channel: 0
                         InitialConnector: null
             Base:
@@ -809,7 +840,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: 36a8d5fe-c958-480b-9a56-9c8750aa53ee
-                        Startup: {}
                         Channel: 0
                         InitialConnector: null
             Base:
@@ -961,7 +991,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: 27158586-a3a1-4d06-9e22-20aab56ca034
-                        Startup: {}
             Base:
                 BasePartAsset: c11c41a3-09dd-428b-b03c-1982e5f683d6:Gates/prefabs/numerical/operators/MultiplicationGate
                 BasePartId: b0db511d-b2d4-4d11-9b19-4cbfeb2820a1
@@ -1018,7 +1047,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: e48d0e09-5b99-47cc-9718-6c234dcec5a7
-                        Startup: {}
                         Channel: 0
                         InitialConnector*: ref!! 52e26d4b-d8ed-4650-aec4-d8817134c46a
             Base:
@@ -1065,7 +1093,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: 9db97fd2-714c-4eab-bcd3-63071e096c37
-                        Startup: {}
                         Channel: 0
                         InitialConnector: null
             Base:
@@ -1138,7 +1165,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: 430ea877-ca48-4f60-a7c1-e91b593e2f4a
-                        Startup: {}
                         Channel: 0
                         InitialConnector: null
             Base:
@@ -1296,7 +1322,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: ff4dafeb-84f9-45c2-bf57-7d97d58e2b3d
-                        Startup: {}
             Base:
                 BasePartAsset: c1cab659-ed0f-4d99-9403-b1fad25632f2:Gates/prefabs/bitwise/NotGate
                 BasePartId: 1275e049-4f4e-4ea8-bb22-7d95d9f67c35
@@ -1368,6 +1393,52 @@ Hierarchy:
                 BasePartAsset: 1f9200d3-ce06-4e34-b247-adbf816f67e2:Devices/prefabs/gauges/TotalPressure
                 BasePartId: 181c18f9-4b61-4e16-8bd9-428ebe0eae68
                 InstanceId: a0d36752-cd7e-4576-9e97-1ecbdac296a1
+        -   Folder: null
+            Entity:
+                Id: 5ab9768e-eb8f-4153-919d-32cf57168a7c
+                Name: TotalPressure
+                Components:
+                    42a9d62a325e428459540c21c20e4b49: !TransformComponent
+                        Id: 07a26cb5-4c2c-4f94-b17e-1b7af63acc0e
+                        Position*: {X: 3.1410856, Y: 1.2603396, Z: 4.3117814}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            de9f861618bf0568c8327b1d1436ce55: ref!! b798a089-2206-45d1-8b63-3608cb19141f
+                    fa1343aeba156c620890f6194cfb67e8: !ModelComponent
+                        Id: fcd73a54-d48f-4609-9743-cd4c5ceef295
+                        Model: 66b8e565-b82c-4143-a0ba-a4c466a4ceb0:Gates/models/buffer
+                        Materials:
+                            0dcbd606c951e5f610efcb7f2ecf8c07~0: 69bc9b59-b743-4274-bf50-5e2f2ca84996:Devices/models/Input/Barometers/mats/totalPressure
+                    04c69e721e2b53b538506ee07d5be715: !LogicLib.Devices.Input.Gauge.Atmo.PressureGauge,LogicLib
+                        Id: 3821f3db-fbc9-471a-9612-73c3cce2df8e
+                        UpdateMs*: 50
+                    5ac02fb5c0dcb62fab9cf0c7eb4f9c88: !RigidbodyComponent
+                        Id: ee197431-55a2-4f0f-80bd-06e4e18a2286
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            706ea61b32d3420f2cc962289dc641c4: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.2, Y: 0.05, Z: 0.2}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 1f9200d3-ce06-4e34-b247-adbf816f67e2:Devices/prefabs/gauges/TotalPressure
+                BasePartId: 181c18f9-4b61-4e16-8bd9-428ebe0eae68
+                InstanceId: 3727ba6e-8639-43c6-b26d-2b337053e9bb
         -   Folder: null
             Entity:
                 Id: 5b124209-c1a8-4395-8ce8-1809a28de9be
@@ -1467,7 +1538,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: e5402a37-fdb8-41d7-866a-95e574a0cb94
-                        Startup: {}
                         Channel: 0
                         InitialConnector*: ref!! 9c98ff6a-e309-4299-a0ab-a5d46b360f0a
             Base:
@@ -1790,7 +1860,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: 52e26d4b-d8ed-4650-aec4-d8817134c46a
-                        Startup: {}
             Base:
                 BasePartAsset: 1f9200d3-ce06-4e34-b247-adbf816f67e2:Devices/prefabs/gauges/TotalPressure
                 BasePartId: 1d635aca-18d5-47a2-ad10-867a7d3fff0b
@@ -1929,7 +1998,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: 2fdeb02e-4ef9-4c10-aef9-872b701a5362
-                        Startup: {}
             Base:
                 BasePartAsset: e798ba52-ebb7-4b4e-9826-b162d8aa0d87:Devices/prefabs/switch
                 BasePartId: 9473dd25-5255-406f-8282-e6c1327e82f6
@@ -1974,7 +2042,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: a060e3c1-d1c5-4b80-9ad4-23471cc22cf6
-                        Startup: {}
                         Channel: 0
                         InitialConnector: null
             Base:
@@ -2116,7 +2183,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: f01a280e-c2c2-40b5-bef0-a1c30d4f18cc
-                        Startup: {}
             Base:
                 BasePartAsset: 383e7a2d-913b-45dd-9acd-312bfd5f6f72:Gates/prefabs/numerical/operators/MuxGate
                 BasePartId: 5e10c787-2ec8-4cc4-9743-1837708689f9
@@ -2256,7 +2322,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: d2f6358e-72d1-4e9d-913c-cdef96f80c65
-                        Startup: {}
             Base:
                 BasePartAsset: 09b445ac-f418-45f5-b9b2-e1b18d0e6b7f:Gates/prefabs/numerical/operators/AdditionGate
                 BasePartId: bd1b30e0-2574-4026-8c50-457b5710b710
@@ -2395,7 +2460,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: 9db51216-e792-4df5-80bf-fe1fcea2d942
-                        Startup: {}
             Base:
                 BasePartAsset: d3def151-029d-48f4-9626-b8da6cccf7bc:Gates/prefabs/bitwise/BufferGate
                 BasePartId: cc1d1493-cd2b-4c15-a9df-ee1b8d010805
@@ -2553,7 +2617,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: a4c04ce9-fe14-4a36-bf2b-d05fea852dc1
-                        Startup: {}
             Base:
                 BasePartAsset: 383e7a2d-913b-45dd-9acd-312bfd5f6f72:Gates/prefabs/numerical/operators/MuxGate
                 BasePartId: e59652eb-3859-4542-9dbe-a487fa465790
@@ -2622,6 +2685,144 @@ Hierarchy:
                 BasePartAsset: 1bb67594-b056-4058-9a09-b0976fd2344a:Devices/prefabs/dial
                 BasePartId: 558ee49c-d8e2-4d65-812a-75ce7a539573
                 InstanceId: 3cdc385b-44ec-4deb-b6f2-86f70d1b5d0f
+        -   Entity:
+                Id: 9d48d88c-8233-4720-9ef7-0cf49d9ae920
+                Name: Output
+                Components:
+                    fed4d5e924410676db8692ff92557a58: !TransformComponent
+                        Id: 9492f427-0e2d-466c-94da-a1224e9cae81
+                        Position: {X: 0.0, Y: 0.0, Z: -0.1}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    085191278eb245c21f6e3f1dcef5c981: !ModelComponent
+                        Id: 73f2e9ea-5b8b-47bd-9773-d4a25720be88
+                        Model: 46892274-a637-4430-9a85-b482cae064f9:Gates/models/Connector
+                        Materials:
+                            47a2a2f096c8810476ce7c4814b4ade8~0: bcb11bbb-76d9-477b-a9b0-60066804feef:GateResources/materials/ConnectorOut
+                    f2253a20d964e67f7b6e7c24c7d91679: !ParticleSystemComponent
+                        Id: 1a64bb00-2ce8-4d91-aeb1-ec23482ced9b
+                        Enabled: false
+                        Control:
+                            ResetSeconds: 0.0
+                            Control: Play
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Speed: 1.0
+                        ParticleSystem:
+                            Settings: {}
+                            BoundingShape: !BoundingSpheretatic
+                                Radius: 3.0
+                            Emitters:
+                                c5b2f24eb802e840d3437a8aa35af265:
+                                    EmitterName: Emitter
+                                    ParticleLifetime: {X: 0.1, Y: 0.1}
+                                    SortingPolicy: ByOrder
+                                    ShapeBuilder: !ShapeBuilderRibbon
+                                        SmoothingPolicy: None
+                                        Segments: 0
+                                        TextureCoordinatePolicy: AsIs
+                                        TexCoordsFactor: 0.0
+                                        UVRotate:
+                                            FlipX: false
+                                            FlipY: false
+                                            UVClockwise: Degree0
+                                    Material: !ParticleMaterialComputeColor
+                                        AlphaAdditive: 1.0
+                                        ComputeColor: !ComputeBinaryColor
+                                            Operator: Multiply
+                                            LeftChild: !ComputeVertexStreamColor
+                                                Stream: !ColorVertexStreamDefinition {}
+                                            RightChild: !ComputeTextureColor
+                                                Texture: 81d9d7b3-a12c-4ec8-bde8-5aaee166b624:Gates/models/dota
+                                                FallbackValue:
+                                                    Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                                                Scale: {X: 1.0, Y: 1.0}
+                                                Offset: {X: 0.0, Y: 0.0}
+                                                Swizzle: null
+                                        UVBuilder: null
+                                        ForceTexCoords: false
+                                    Spawners:
+                                        04d55d3aaba881d0acec62d7c92fd8ca: !SpawnerPerSecond
+                                            LoopCondition: Looping
+                                            Delay: {X: 0.0, Y: 0.0}
+                                            Duration: {X: 1.0, Y: 1.0}
+                                            SpawnCount: 100.0
+                                    Initializers:
+                                        5a2862dc7e2327bf6567eaed3703472e: !InitialSizeSeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 0.1
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            RandomSize: {X: 1.0, Y: 1.0}
+                                        e65f8eff54bfc38fd0b39d06b3d558de: !InitialSpawnOrder
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: false
+                                        4e0c3e0fd73baaf8b30cf060adb80480: !InitialPositionArc
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            DisplayParticlePosition: false
+                                            Target: null
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: false
+                                            FallbackTarget: {X: 0.0, Y: -1.0, Z: 0.0}
+                                            DisplayParticleScaleUniform: false
+                                            ArcHeight: 0.0
+                                            Sequential: true
+                                            FixedLength: 2
+                                            PositionMin: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            PositionMax: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            SeedOffset: 0
+                                    Updaters: {}
+                    02f621b5858381a9babd21e8401a801d: !RigidbodyComponent
+                        Id: cb88910f-8eb3-415c-9f7a-9c14f1fde92a
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            cada2c28944ca0a91d4f2848942fe833: !CylinderColliderShapeDesc
+                                Height: 0.05
+                                Radius: 0.0125
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
+                        Id: 2e1c3838-783f-4d97-a569-20a481685aae
+            Base:
+                BasePartAsset: 1f9200d3-ce06-4e34-b247-adbf816f67e2:Devices/prefabs/gauges/TotalPressure
+                BasePartId: 1d635aca-18d5-47a2-ad10-867a7d3fff0b
+                InstanceId: 3727ba6e-8639-43c6-b26d-2b337053e9bb
         -   Folder: null
             Entity:
                 Id: a049633c-ca13-47d0-b2d7-49b423254e54
@@ -2874,7 +3075,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: 024dd5d7-bcc5-4d7f-bb60-73dbf208fa27
-                        Startup: {}
             Base:
                 BasePartAsset: ecbd872d-808f-439e-ab1b-9f579acff771:Gates/prefabs/bitwise/OrGate
                 BasePartId: fe3dd239-8303-4312-9fce-0cdf5bbd19a8
@@ -2919,7 +3119,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: 060896f8-e417-4547-8df7-28473957a3e1
-                        Startup: {}
                         Channel: 0
                         InitialConnector: null
             Base:
@@ -3000,7 +3199,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: c35f1a24-cd29-4f5b-b455-a6880b1f224c
-                        Startup: {}
                         Channel: 0
                         InitialConnector: null
             Base:
@@ -3280,7 +3478,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: 56ec2bae-73f3-407b-9066-b62e8cf55608
-                        Startup: {}
             Base:
                 BasePartAsset: 229aa9b6-5e8b-4b16-95f9-87592db2474f:Gates/prefabs/numerical/constants/OneGate
                 BasePartId: e7bdafe4-f965-4813-acd5-587c38637aa3
@@ -3324,7 +3521,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: 447007b2-eef6-4a87-8dbf-4891f990b2d7
-                        Startup: {}
                         Channel: 1
                         InitialConnector: null
             Base:
@@ -3370,7 +3566,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: a54d9122-44ae-4d86-9108-9d4ae7882b1f
-                        Startup: {}
                         Channel: 0
                         InitialConnector*: ref!! 29660b08-d2c8-4e85-b178-b158c942e531
             Base:
@@ -3417,6 +3612,75 @@ Hierarchy:
                 BasePartAsset: 0d277501-d369-49bf-ace1-4c6d9ab9088e:Pipes/PipePrefab
                 BasePartId: b3659ff4-99cb-4dbe-bf97-c9f93b7ca691
                 InstanceId: 1191664c-cf96-4b0c-9618-5a3c1d18f85a
+        -   Folder: null
+            Entity:
+                Id: c877327a-cf57-4e06-9434-78153fb7545f
+                Name: gauge
+                Components:
+                    b7b5a5a99d00723318998dcfb6f23257: !TransformComponent
+                        Id: 235126db-c375-4415-9ac9-e8139377cafa
+                        Position*: {X: 2.7183034, Y: 1.4685401, Z: 3.6613204}
+                        Rotation: {X: 0.49999997, Y: 0.49999997, Z: -0.49999997, W: 0.49999997}
+                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Children:
+                            4647da350bac9172e445e03c9a80b205: ref!! 6a9fdc5d-9643-4f27-85c5-b13ef5c95e8c
+                    f0eef072fab9a14ef85fe0b65900146e: !ModelComponent
+                        Id: bc774ca3-f51e-4417-99af-acccb4f580c8
+                        Model: ad23cbbb-d412-48b2-a7c0-85e14623cd2b:Devices/models/Output/gauge
+                        Materials: {}
+                    1b933a9003472ddf87c584dae40b08f5: !LogicLib.Devices.Output.Dial,LogicLib
+                        Id: 8759ca88-4c2c-4571-b7ce-c3d12c0a0da0
+                    50837a05f7f7cbdf7d4765a6a35290ea*: !LogicLib.Devices.Output.Dial,LogicLib
+                        Id: 5b1f6041-5c34-44b9-8c5c-381d399eec14
+            Base:
+                BasePartAsset: 1bb67594-b056-4058-9a09-b0976fd2344a:Devices/prefabs/dial
+                BasePartId: ecddb406-9767-431a-9ff3-1f1bc8661e0d
+                InstanceId: 943b8126-084c-4eed-ac8b-ba1ca7b5c16b
+        -   Entity:
+                Id: c91e0db3-08be-46ca-b83c-55c44a6240b4
+                Name: Input
+                Components:
+                    fed4d5e924410676db8692ff92557a58: !TransformComponent
+                        Id: d329f99a-86f4-4f07-9935-7688c2d3d8a6
+                        Position: {X: -6.3088834E-10, Y: -0.005292275, Z: -1.0514808E-09}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    085191278eb245c21f6e3f1dcef5c981: !ModelComponent
+                        Id: 52e0f30d-8720-4625-9ba8-10d541425a04
+                        Model: 46892274-a637-4430-9a85-b482cae064f9:Gates/models/Connector
+                        Materials:
+                            e6f8bbf8b44033be361574cb6730a20f~0: 5ad98204-5c4e-4844-b1c5-0e853becbc1c:GateResources/materials/ConnectorIn
+                    02f621b5858381a9babd21e8401a801d: !RigidbodyComponent
+                        Id: 980a69c2-d332-4267-91ab-ef3b1e9b9e54
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            cada2c28944ca0a91d4f2848942fe833: !CylinderColliderShapeDesc
+                                Height: 0.05
+                                Radius: 0.0125
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
+                        Id: 04effb7a-6471-4971-8ed8-49404c1ba362
+                        Channel: 0
+                        InitialConnector*: ref!! 2e1c3838-783f-4d97-a569-20a481685aae
+            Base:
+                BasePartAsset: 1bb67594-b056-4058-9a09-b0976fd2344a:Devices/prefabs/dial
+                BasePartId: 4587d853-c3db-44e8-83c3-6a442d7e7b70
+                InstanceId: 943b8126-084c-4eed-ac8b-ba1ca7b5c16b
         -   Entity:
                 Id: d3a10b5a-414c-43e7-8c6c-87fe8cf58d77
                 Name: Output
@@ -3568,7 +3832,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: 9c98ff6a-e309-4299-a0ab-a5d46b360f0a
-                        Startup: {}
             Base:
                 BasePartAsset: 1f9200d3-ce06-4e34-b247-adbf816f67e2:Devices/prefabs/gauges/TotalPressure
                 BasePartId: 1d635aca-18d5-47a2-ad10-867a7d3fff0b
@@ -3748,7 +4011,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: 117f6d56-3021-4280-ab57-f6a950444df7
-                        Startup: {}
             Base:
                 BasePartAsset: 514d7a7b-d982-4392-8450-823951ea3462:Gates/prefabs/numerical/constants/SevenGate
                 BasePartId: b687cde4-ed89-4a15-b9d6-29d405270bed
@@ -3792,7 +4054,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: c38d3091-5879-421b-b87f-dc2743f44745
-                        Startup: {}
                         Channel: 0
                         InitialConnector: null
             Base:
@@ -3933,7 +4194,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: 29660b08-d2c8-4e85-b178-b158c942e531
-                        Startup: {}
             Base:
                 BasePartAsset: 1f9200d3-ce06-4e34-b247-adbf816f67e2:Devices/prefabs/gauges/TotalPressure
                 BasePartId: 1d635aca-18d5-47a2-ad10-867a7d3fff0b
@@ -4073,7 +4333,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: eff6941f-7afb-47c4-b5c1-6809d9feb243
-                        Startup: {}
             Base:
                 BasePartAsset: c11c41a3-09dd-428b-b03c-1982e5f683d6:Gates/prefabs/numerical/operators/MultiplicationGate
                 BasePartId: 16abf7a9-dafe-4061-986f-f969ed82b4cc
@@ -4135,7 +4394,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: fce3ca8b-a01d-47ac-bb51-663869f8383b
-                        Startup: {}
                         Channel: 2
                         InitialConnector: null
             Base:
@@ -4160,9 +4418,9 @@ Hierarchy:
                 Components:
                     f7c16a5880d3e7e42f31f38349f5294c: !TransformComponent
                         Id: ab2ca335-0f6f-4c45-8c33-ba2d3bc9c152
-                        Position*: {X: 2.725221, Y: 1.792418, Z: 4.326871}
+                        Position*: {X: 3.137896, Y: 1.077975, Z: 4.326871}
                         Rotation*: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale*: {X: 0.02, Y: 0.02, Z: 0.02}
+                        Scale*: {X: 0.02, Y: 0.04, Z: 0.02}
                         Children:
                             bea34535c5bb69c7874ddaee15e577cb: ref!! f2a0f876-dc12-4e42-9f66-8a811de1050e
                             e436cac3c7a91857d87fec36191e8711: ref!! c34d2d53-6f55-4283-9455-e442e071d505
@@ -4180,6 +4438,28 @@ Hierarchy:
                         InitialCarbonDioxide: 0.0
                         InitialCarbonMonoxide: 0.0
                         InitialNitrogen: 0.0
+                    16b1c881163aa94d3f55eb6e8ad524f1*: !RigidbodyComponent
+                        Id: 527a812a-7928-49ac-b3eb-cb356fca01e8
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            8a8f9c2d9f459247773179034fb31f49: !CylinderColliderShapeDesc
+                                Height: 10.0
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 5.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
                 BasePartAsset: 0d277501-d369-49bf-ace1-4c6d9ab9088e:Pipes/PipePrefab
                 BasePartId: f1262846-ece5-4404-95ab-f6dca75d9b7a
@@ -4386,7 +4666,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: feb9ca46-4126-4687-a2eb-ba4b2a868d63
-                        Startup: {}
             Base:
                 BasePartAsset: ea884f6e-58f5-4550-a672-e401751cdf3a:Devices/prefabs/button
                 BasePartId: 62777abb-d74f-4251-a65d-ce86bc4627f8
@@ -4525,7 +4804,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
                         Id: d6b6f5d3-7cde-4e78-ab00-0bc1b20f8681
-                        Startup: {}
             Base:
                 BasePartAsset: ecbd872d-808f-439e-ab1b-9f579acff771:Gates/prefabs/bitwise/OrGate
                 BasePartId: 6b9b3418-deab-42bf-823a-320e6a9306bf

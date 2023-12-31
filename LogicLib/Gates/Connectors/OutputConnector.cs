@@ -15,27 +15,21 @@ namespace LogicLib.Gates.Connectors
     public class MissingSubcomponentException(string msg) : Exception(msg);
     public class OutputConnector : Connector
     {
-        private ParticleSystemComponent particleSystem;
-        public bool Initialized { get; private set; }
-        public override void Start()
-        {
-            particleSystem = Entity.Get<ParticleSystemComponent>();
-            Initialized = true;
-            base.Start();
-        }
+        ParticleSystemComponent ParticleSystem => _particleSystem ??= Entity.Get<ParticleSystemComponent>();
+        ParticleSystemComponent _particleSystem;
         //Connect and set particle path indicating connection
         public override bool Connect(Connector connector)
         {
             if(!base.Connect(connector))
                 return false;
-            particleSystem.Enabled = true;
+            ParticleSystem.Enabled = true;
             Arc().Target = connector.Entity.Transform;
-            particleSystem.Color = GetColor();
+            ParticleSystem.Color = GetColor();
             return true;
         }
         private InitialPositionArc Arc()
         {
-            foreach(ParticleInitializer init in particleSystem.ParticleSystem.Emitters[0].Initializers)
+            foreach(ParticleInitializer init in ParticleSystem.ParticleSystem.Emitters[0].Initializers)
             {
                 if (init is InitialPositionArc arc)
                     return arc;
@@ -50,16 +44,16 @@ namespace LogicLib.Gates.Connectors
         public override void Disconnect()
         {
             base.Disconnect();
-            particleSystem.Enabled = false;
+            ParticleSystem.Enabled = false;
         }
         public override void Tick()
         {
             Connected?.Tick();
-            particleSystem.Color = GetColor();
+            ParticleSystem.Color = GetColor();
         }
         public override long Read()
         {
-            return gate.State;
+            return Gate.State;
         }
     }
 }

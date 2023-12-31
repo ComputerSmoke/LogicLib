@@ -24,7 +24,7 @@ namespace LogicLib.Gates.Connectors
         }
         public override void Tick()
         {
-            Ticker.UpdateGate(gate);
+            Ticker.UpdateGate(Gate);
         }
         public override long Read()
         {
@@ -35,19 +35,14 @@ namespace LogicLib.Gates.Connectors
         public override void Start()
         {
             base.Start();
-            if (gate == null)
+            if (Gate == null)
                 throw new NullGateException("Input connector must have gate in parent entity.");
             if(InitialConnector != null)
             {
                 if (InitialConnector.Connected != null)
                     throw new InvalidSchemaException("Cannot initialize two input connectors connected to the same output connector.");
-                ConnectWhenLoaded();
+                Connect(InitialConnector);
             }
-        }
-        private async void ConnectWhenLoaded()
-        {
-            await InitialConnector.Startup;
-            Connect(InitialConnector);
         }
     }
 }

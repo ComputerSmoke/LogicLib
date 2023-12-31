@@ -9,9 +9,10 @@ using System.Threading.Tasks;
 namespace LogicLib.Gates.Connectors
 {
     public class IncompatibleConnectorException(string msg) : Exception(msg) { }
-    public abstract class Connector : WaitableStartupScript
+    public abstract class Connector : StartupScript
     {
-        protected Gate gate;
+        protected Gate Gate => _gate ??= Entity.GetParent().Get<Gate>();
+        Gate _gate;
         public Connector Connected { get; protected set; }
         //Connect to another connector. Returns false if already connected, true otherwise.
         public virtual bool Connect(Connector connector) {
@@ -31,11 +32,6 @@ namespace LogicLib.Gates.Connectors
             Connector temp = Connected;
             Connected = null;
             temp.Disconnect();
-        }
-        public override void Start()
-        {
-            gate = Entity.GetParent().Get<Gate>();
-            base.Start();
         }
         public abstract void Tick();
         public abstract long Read();
