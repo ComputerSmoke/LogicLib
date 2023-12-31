@@ -1,4 +1,5 @@
 ﻿using Stride.Engine;
+using StrideUtils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 namespace LogicLib.Gates.Connectors
 {
     public class IncompatibleConnectorException(string msg) : Exception(msg) { }
-    public abstract class Connector : StartupScript
+    public abstract class Connector : WaitableStartupScript
     {
         protected Gate gate;
         public Connector Connected { get; protected set; }
@@ -33,8 +34,8 @@ namespace LogicLib.Gates.Connectors
         }
         public override void Start()
         {
-            base.Start();
             gate = Entity.GetParent().Get<Gate>();
+            base.Start();
         }
         public abstract void Tick();
         public abstract long Read();

@@ -12,7 +12,7 @@ namespace LogicLib.Gates
 
         Queue<Gate> newTicks;
         HashSet<Gate> toTick;
-        public int TickDelay { get; set; } = 100;
+        public int TickDelay { get; set; } = 50;
         //Enqueue a gate to update at next tick
         public void UpdateGate(Gate gate)
         {

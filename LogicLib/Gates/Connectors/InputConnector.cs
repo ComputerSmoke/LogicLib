@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StrideUtils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -40,8 +41,13 @@ namespace LogicLib.Gates.Connectors
             {
                 if (InitialConnector.Connected != null)
                     throw new InvalidSchemaException("Cannot initialize two input connectors connected to the same output connector.");
-                Connect(InitialConnector);
+                ConnectWhenLoaded();
             }
+        }
+        private async void ConnectWhenLoaded()
+        {
+            await InitialConnector.Startup;
+            Connect(InitialConnector);
         }
     }
 }

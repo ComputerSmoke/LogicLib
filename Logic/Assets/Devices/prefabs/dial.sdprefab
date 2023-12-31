@@ -45,6 +45,7 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: b50b35dc-a7a0-4d1b-8551-bdb6e798c228
+                        Startup: {}
                         Channel: 0
                         InitialConnector: null
             Base:

@@ -16,10 +16,12 @@ namespace LogicLib.Gates.Connectors
     public class OutputConnector : Connector
     {
         private ParticleSystemComponent particleSystem;
+        public bool Initialized { get; private set; }
         public override void Start()
         {
-            base.Start();
             particleSystem = Entity.Get<ParticleSystemComponent>();
+            Initialized = true;
+            base.Start();
         }
         //Connect and set particle path indicating connection
         public override bool Connect(Connector connector)

@@ -12,7 +12,7 @@ namespace LogicLib.Devices.Input.Gauge
     public abstract class Gauge : Device
     {
         protected SettableGate output;
-        public int UpdateMs = 100;
+        public int UpdateMs = 50;
         protected PhysicsComponent physicsComponent;
         public override async Task Execute()
         {
