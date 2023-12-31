@@ -1,0 +1,20 @@
+!Animation
+Id: 2449db97-1b4a-45f6-859c-9c9fa5c07d91
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../GateResources/gateModels/switch.fbx
+AnimationStack: 0
+ClipDuration:
+    Enabled: false
+    StartAnimationTime: 0:00:00:00.0000000
+    EndAnimationTime: 0:00:30:00.0000000
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+RepeatMode: LoopInfinite
+Type: !StandardAnimationAssetType {}
+Skeleton: 97f97bd5-fd67-4bc8-b813-9518d6c3e8db:Devices/models/Input/Interactable/switch Skeleton
+RootMotion: false
+PreviewModel: 55f9367e-4526-491b-a3e6-3db6f8d281eb:Devices/models/Input/Interactable/switch
+AnimationTimeMinimum: 0:00:00:00.0000000
+AnimationTimeMaximum: 0:00:00:00.3750000
+~SourceHashes:
+    04ba6cdaaa2fdbfcabd8929200d79f9d~../../../../GateResources/gateModels/switch.fbx: 3f96457345c118f34a12d6256c7bf3b8

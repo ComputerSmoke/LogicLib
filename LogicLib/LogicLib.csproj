@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Comrade1\StrideUtils\StrideUtils.csproj" />
+    <ProjectReference Include="..\..\Gas\Gas\Gas.csproj" />
   </ItemGroup>
 
 </Project>

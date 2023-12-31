@@ -1,0 +1,13 @@
+!Skeleton
+Id: 97f97bd5-fd67-4bc8-b813-9518d6c3e8db
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../GateResources/gateModels/switch.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    f03df557a5e9b5e582fa727af1eaef9a: {Name: RootNode, Depth: 0}
+    1b36f0786c01fa655ba664822f98fc9d: {Name: Cube, Depth: 1}
+    f2ea5b625d7d1f9d9fda5aca2e1e754f: {Name: Cylinder, Depth: 1}
+    83a0e75ec51b5ff4a60e3e0ab8876066: {Name: Cube.001, Depth: 2}
+~SourceHashes:
+    2a502a1951a57966629f0c3bfa7f87db~../../../../GateResources/gateModels/switch.fbx: 3f96457345c118f34a12d6256c7bf3b8

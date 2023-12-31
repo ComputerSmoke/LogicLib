@@ -1,0 +1,201 @@
+!PrefabAsset
+Id: fb7fad52-14ee-48b7-a1d5-501395b64d7a
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 3ed22314-e9de-4714-99a5-289dd42fdbfe
+    Parts:
+        -   Folder: null
+            Entity:
+                Id: 3ed22314-e9de-4714-99a5-289dd42fdbfe
+                Name: CarbonDioxidePressure
+                Components:
+                    42a9d62a325e428459540c21c20e4b49: !TransformComponent
+                        Id: 16cd7d84-8f5e-4c56-8fd0-9e1624c85ba6
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            de9f861618bf0568c8327b1d1436ce55: ref!! aeb982ed-443a-4831-ad04-707d5c4c4ed9
+                    fa1343aeba156c620890f6194cfb67e8: !ModelComponent
+                        Id: 1f346a21-5ce3-48a0-bf53-1fa4912ad27d
+                        Model: 66b8e565-b82c-4143-a0ba-a4c466a4ceb0:Gates/models/buffer
+                        Materials:
+                            0dcbd606c951e5f610efcb7f2ecf8c07~0: 37b90feb-23f4-4b04-a8bd-511f83f8330f:Devices/models/Input/Barometers/mats/carbonDioxidePressure
+                    5ac02fb5c0dcb62fab9cf0c7eb4f9c88: !RigidbodyComponent
+                        Id: 0a9d1c3a-8c15-4a0c-8727-858e7e40a7ae
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            706ea61b32d3420f2cc962289dc641c4: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.2, Y: 0.05, Z: 0.2}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    4012ca638ce8da5339d9f1e0f87ef06f: !LogicLib.Devices.Input.Gauge.Atmo.CarbonDioxideGauge,LogicLib
+                        Id: 0ed6f845-81c9-47a2-a642-c75c480b313c
+                        UpdateMs: 100
+        -   Entity:
+                Id: a2b113f4-4cf8-4b5d-a54f-91a3b91cc461
+                Name: Output
+                Components:
+                    06888f71f6f673c160a8504a819e6dda: !TransformComponent
+                        Id: aeb982ed-443a-4831-ad04-707d5c4c4ed9
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            1bd74c013a2226aefea8eb77b7741acf: ref!! 1fc4505c-edb8-4c29-a594-e997e059345c
+                    524b97aa3a78c3337f042196e0d75cc6: !LogicLib.Gates.Settable.SettableGate,LogicLib
+                        Id: 44c09c35-eeeb-4cbc-ab35-366ea642b7b2
+        -   Entity:
+                Id: d927d763-3212-496d-b1b4-64b3cfbbd704
+                Name: Output
+                Components:
+                    fed4d5e924410676db8692ff92557a58: !TransformComponent
+                        Id: 1fc4505c-edb8-4c29-a594-e997e059345c
+                        Position*: {X: 0.0, Y: 0.0, Z: -0.1}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    085191278eb245c21f6e3f1dcef5c981: !ModelComponent
+                        Id: 1634afd4-b3fe-417f-8b26-c527181696cf
+                        Model: 46892274-a637-4430-9a85-b482cae064f9:Gates/models/Connector
+                        Materials:
+                            47a2a2f096c8810476ce7c4814b4ade8~0: bcb11bbb-76d9-477b-a9b0-60066804feef:GateResources/materials/ConnectorOut
+                    f2253a20d964e67f7b6e7c24c7d91679: !ParticleSystemComponent
+                        Id: 00aaa27c-2df1-4ced-b0c4-4b2476ae26d6
+                        Enabled: false
+                        Control:
+                            ResetSeconds: 0.0
+                            Control: Play
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Speed: 1.0
+                        ParticleSystem:
+                            Settings: {}
+                            BoundingShape: !BoundingSpheretatic
+                                Radius: 3.0
+                            Emitters:
+                                c5b2f24eb802e840d3437a8aa35af265:
+                                    EmitterName: Emitter
+                                    ParticleLifetime: {X: 0.1, Y: 0.1}
+                                    SortingPolicy: ByOrder
+                                    ShapeBuilder: !ShapeBuilderRibbon
+                                        SmoothingPolicy: None
+                                        Segments: 0
+                                        TextureCoordinatePolicy: AsIs
+                                        TexCoordsFactor: 0.0
+                                        UVRotate:
+                                            FlipX: false
+                                            FlipY: false
+                                            UVClockwise: Degree0
+                                    Material: !ParticleMaterialComputeColor
+                                        AlphaAdditive: 1.0
+                                        ComputeColor: !ComputeBinaryColor
+                                            Operator: Multiply
+                                            LeftChild: !ComputeVertexStreamColor
+                                                Stream: !ColorVertexStreamDefinition {}
+                                            RightChild: !ComputeTextureColor
+                                                Texture: 81d9d7b3-a12c-4ec8-bde8-5aaee166b624:Gates/models/dota
+                                                FallbackValue:
+                                                    Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                                                Scale: {X: 1.0, Y: 1.0}
+                                                Offset: {X: 0.0, Y: 0.0}
+                                                Swizzle: null
+                                        UVBuilder: null
+                                        ForceTexCoords: false
+                                    Spawners:
+                                        04d55d3aaba881d0acec62d7c92fd8ca: !SpawnerPerSecond
+                                            LoopCondition: Looping
+                                            Delay: {X: 0.0, Y: 0.0}
+                                            Duration: {X: 1.0, Y: 1.0}
+                                            SpawnCount: 100.0
+                                    Initializers:
+                                        5a2862dc7e2327bf6567eaed3703472e: !InitialSizeSeed
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 0.1
+                                            SeedOffset: 0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: true
+                                            RandomSize: {X: 1.0, Y: 1.0}
+                                        e65f8eff54bfc38fd0b39d06b3d558de: !InitialSpawnOrder
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            DisplayParticlePosition: false
+                                            DisplayParticleRotation: false
+                                            DisplayParticleScale: false
+                                            DisplayParticleScaleUniform: false
+                                        4e0c3e0fd73baaf8b30cf060adb80480: !InitialPositionArc
+                                            InheritPosition: true
+                                            Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            InheritRotation: true
+                                            Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                            InheritScale: true
+                                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                                            ScaleUniform: 1.0
+                                            DisplayParticlePosition: false
+                                            Target: null
+                                            DisplayParticleRotation: true
+                                            DisplayParticleScale: false
+                                            FallbackTarget: {X: 0.0, Y: -1.0, Z: 0.0}
+                                            DisplayParticleScaleUniform: false
+                                            ArcHeight: 0.0
+                                            Sequential: true
+                                            FixedLength: 2
+                                            PositionMin: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            PositionMax: {X: 0.0, Y: 0.0, Z: 0.0}
+                                            SeedOffset: 0
+                                    Updaters: {}
+                    02f621b5858381a9babd21e8401a801d: !RigidbodyComponent
+                        Id: 8c030e94-40cb-4487-ac50-84bdcffa69b1
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            cada2c28944ca0a91d4f2848942fe833: !CylinderColliderShapeDesc
+                                Height: 0.05
+                                Radius: 0.0125
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    23abd7673218fcc4fd35c412aa58f1e2: !LogicLib.Gates.Connectors.OutputConnector,LogicLib
+                        Id: a7cc655f-d9ee-4c91-b1d6-cc25e47c80c7
+            Base:
+                BasePartAsset: 30223cf5-9c47-41a8-8712-67c6a7e29550:Gates/prefabs/Output
+                BasePartId: 82431641-5af6-484e-81c3-8c74a352d9ba
+                InstanceId: b4f877f9-5194-47c8-93ff-64e6042296db

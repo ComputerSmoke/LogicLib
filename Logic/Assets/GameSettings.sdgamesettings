@@ -2,8 +2,8 @@
 Id: 89e871d2-4f5e-4d4a-a643-99109c478786
 SerializedVersion: {Stride: 3.1.0.1}
 Tags: []
-DefaultScene: 4e9968b2-3c17-4f66-8f23-5fefcefb8f28:MainScene
-GraphicsCompositor: 1c033a7e-c955-445c-a7a7-22d92ebc94b5:GraphicsCompositor
+DefaultScene: 4e9968b2-3c17-4f66-8f23-5fefcefb8f28:MainScene (2)
+GraphicsCompositor: 1c033a7e-c955-445c-a7a7-22d92ebc94b5:GraphicsCompositor (2)
 Defaults:
     - !Stride.Audio.AudioEngineSettings,Stride.Audio
         HrtfSupport: false

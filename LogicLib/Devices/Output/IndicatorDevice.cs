@@ -13,10 +13,10 @@ namespace LogicLib.Devices.Output
     public class IndicatorDevice : Device
     {
         private LightComponent lightComponent;
-        public override void Start()
+        public override Task Execute()
         {
-            base.Start();
             lightComponent = Entity.FindInChild<LightComponent>();
+            return Task.CompletedTask;
         }
         public override void GateChange(Gate gate)
         {

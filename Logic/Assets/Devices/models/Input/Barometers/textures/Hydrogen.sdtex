@@ -1,0 +1,7 @@
+!Texture
+Id: 77fd3721-7de1-489e-8b10-e8aa5e83ff06
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../Resources/deviceModels/barometers/Hydrogen.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

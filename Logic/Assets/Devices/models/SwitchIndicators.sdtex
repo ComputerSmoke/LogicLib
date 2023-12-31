@@ -1,8 +1,0 @@
-!Texture
-Id: 6be5e947-7e60-4efb-a3f3-8f38137fa826
-SerializedVersion: {Stride: 2.0.0.0}
-Tags: []
-Source: !file ../../GateResources/textures/SwitchIndicators.png
-Type: !ColorTextureType
-    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
-    PremultiplyAlpha: false

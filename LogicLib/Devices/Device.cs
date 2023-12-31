@@ -9,7 +9,7 @@ using LogicLib.Gates.Solo;
 
 namespace LogicLib.Devices
 {
-    public abstract class Device : StartupScript
+    public abstract class Device : AsyncScript
     {
         protected List<BufferGate> inputs;
 

@@ -8,9 +8,11 @@ using Valve.VR;
 namespace LogicLib.Gates.Connectors
 {
     public class NullGateException(string msg) : Exception(msg);
+    public class InvalidSchemaException(string msg) : Exception(msg);
     public class InputConnector : Connector
     {
         public int Channel { get; set; }
+        public OutputConnector InitialConnector { get; set; }
         //Connect and tick gate.
         public override bool Connect(Connector connector)
         {
@@ -34,6 +36,12 @@ namespace LogicLib.Gates.Connectors
             base.Start();
             if (gate == null)
                 throw new NullGateException("Input connector must have gate in parent entity.");
+            if(InitialConnector != null)
+            {
+                if (InitialConnector.Connected != null)
+                    throw new InvalidSchemaException("Cannot initialize two input connectors connected to the same output connector.");
+                Connect(InitialConnector);
+            }
         }
     }
 }

@@ -170,7 +170,7 @@ Hierarchy:
                             71d913ec25feba54672cd24fd0fd9cf9: ref!! dd0b4f8c-c458-459c-a689-2219a333b53d
                     5e71b81509bbc970167399b284f20ba4: !ModelComponent
                         Id: ab698b50-3b42-4a77-8410-a9431165c57a
-                        Model: bae892f9-b5ef-4fb3-9599-41562967ee41:Devices/models/button
+                        Model: bae892f9-b5ef-4fb3-9599-41562967ee41:Devices/models/Input/Interactable/button
                         Materials: {}
                     e84aa8bc7f1f0ff29f6f43cb15bf14ff: !RigidbodyComponent
                         Id: 044a5aa1-4a48-4578-818e-4991b9586386
@@ -202,6 +202,6 @@ Hierarchy:
                     25595b7a2139bd024310779342c703c8: !AnimationComponent
                         Id: bb852b95-dba3-408f-84bb-9ff44bbae67d
                         Animations:
-                            ebd57a4fae383c19333edd6a9dbd7d69~interact: 5ab4a8c8-f1b5-4e49-876f-882510b1550c:Devices/models/button_2
-                    76b37bd8cec948e553bb289eba776abf: !LogicLib.Devices.Input.Button,LogicLib
-                        Id: 37fc01e2-7103-4551-bf3b-4779ffa90c38
+                            ebd57a4fae383c19333edd6a9dbd7d69~interact: 5ab4a8c8-f1b5-4e49-876f-882510b1550c:Devices/models/Input/Interactable/button_2
+                    b5d7543a11a3aebd2bc460cce1e99d05: !LogicLib.Devices.Input.Interactables.Button,LogicLib
+                        Id: c5ab85fe-e5b4-40d8-af39-ce4ce71573f2

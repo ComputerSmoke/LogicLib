@@ -32,7 +32,7 @@ Hierarchy:
                             d013cc3261901621826229b2f7492faf: ref!! c224c88d-eaa4-43a4-b159-8fdffef3b412
                     0d67ba7f1c244a2f60f3111013f33534: !ModelComponent
                         Id: 44538784-d0c7-4a9a-85ee-93629fc2c59e
-                        Model: 55f9367e-4526-491b-a3e6-3db6f8d281eb:Devices/models/switch
+                        Model: 55f9367e-4526-491b-a3e6-3db6f8d281eb:Devices/models/Input/Interactable/switch
                         Materials: {}
                     46e232a833e83facdfabb3160102cc6d: !RigidbodyComponent
                         Id: 5c846a5d-e4df-4450-aae8-6a0e692d674a
@@ -64,9 +64,9 @@ Hierarchy:
                     64f42fcd52a77916571eac86eb2b9389: !AnimationComponent
                         Id: 570e306e-f669-40ea-bf79-7f049820bb9b
                         Animations:
-                            304d7fdd31294e958e7f5dd719a8bb0c~interact: 2449db97-1b4a-45f6-859c-9c9fa5c07d91:Devices/models/switch_2
-                    a924ed0ff6d0d1ad382d88c74b7e6cca: !LogicLib.Devices.Input.Lever,LogicLib
-                        Id: b0a1932d-1c2b-4181-ad0d-0587e2cb9f8b
+                            304d7fdd31294e958e7f5dd719a8bb0c~interact: 2449db97-1b4a-45f6-859c-9c9fa5c07d91:Devices/models/Input/Interactable/switch_2
+                    6b91c31217331c45f89fcca9fc7617cf: !LogicLib.Devices.Input.Interactables.Lever,LogicLib
+                        Id: 11f9c8d5-d464-4eea-bcc3-d0df4693c0ec
         -   Entity:
                 Id: 9473dd25-5255-406f-8282-e6c1327e82f6
                 Name: Output

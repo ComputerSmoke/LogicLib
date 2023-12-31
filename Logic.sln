@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logic.macOS", "Logic.macOS\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogicLib", "LogicLib\LogicLib.csproj", "{4AB5362B-B9C8-4C13-ACD6-5E7ACC03F9E5}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gas", "..\Gas\Gas\Gas.csproj", "{D00FF25C-207A-4413-8081-22E9266A40C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrideUtils", "..\Comrade1\StrideUtils\StrideUtils.csproj", "{DBA75F7C-0FC9-484D-B4DC-72539E059843}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{4AB5362B-B9C8-4C13-ACD6-5E7ACC03F9E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AB5362B-B9C8-4C13-ACD6-5E7ACC03F9E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AB5362B-B9C8-4C13-ACD6-5E7ACC03F9E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D00FF25C-207A-4413-8081-22E9266A40C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D00FF25C-207A-4413-8081-22E9266A40C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D00FF25C-207A-4413-8081-22E9266A40C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D00FF25C-207A-4413-8081-22E9266A40C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBA75F7C-0FC9-484D-B4DC-72539E059843}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBA75F7C-0FC9-484D-B4DC-72539E059843}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBA75F7C-0FC9-484D-B4DC-72539E059843}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBA75F7C-0FC9-484D-B4DC-72539E059843}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

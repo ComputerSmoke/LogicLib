@@ -86,6 +86,7 @@ Hierarchy:
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: e1ac7e99-d8e1-4054-984e-7678b70b8924
                         Channel: 0
+                        InitialConnector: null
             Base:
                 BasePartAsset: 613b9a34-7ea2-4faf-97d2-062686a7f696:Gates/prefabs/Input
                 BasePartId: 7d220887-e62e-4efb-b855-b166a3e1f717

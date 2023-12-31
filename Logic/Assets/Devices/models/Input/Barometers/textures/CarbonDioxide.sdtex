@@ -1,0 +1,7 @@
+!Texture
+Id: 6290e708-81b0-42a5-a3a6-a2f5c4ce40b0
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../Resources/deviceModels/barometers/CarbonDioxide.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

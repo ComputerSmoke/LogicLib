@@ -1,0 +1,7 @@
+!Texture
+Id: ac359675-320d-481d-819b-77da9ee5fa54
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../Resources/deviceModels/barometers/TotalPressure.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

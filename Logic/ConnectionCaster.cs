@@ -8,7 +8,7 @@ using Stride.Engine;
 using Stride.Input;
 using Stride.Physics;
 using LogicLib.Gates.Connectors;
-using LogicLib.Devices.Input;
+using LogicLib.Devices.Input.Interactables;
 
 namespace Logic
 {

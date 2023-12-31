@@ -12,7 +12,7 @@ namespace LogicLib.Gates
 
         protected override long ComputeNextState(long[] inputs)
         {
-            if(inputs.Length != 0)
+            if (inputs.Length != 0)
                 throw new ConnectorMiscountException("Constant gate must have 0 input connectors.");
             return ConstantValue;
         }

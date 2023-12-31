@@ -46,3 +46,4 @@ Hierarchy:
                     1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
                         Id: 7628ac3c-3f8f-481d-8ff0-b088443271a6
                         Channel: 0
+                        InitialConnector: null
