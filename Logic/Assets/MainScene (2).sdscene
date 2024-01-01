@@ -112,7 +112,7 @@ Hierarchy:
                         Id: 1aabb3f0-dbbc-4d06-bf69-3b69e9d7eead
                         Position*: {X: 2.5059984, Y: 0.7124438, Z: 4.326871}
                         Rotation*: {X: 0.0, Y: 0.0, Z: 0.70710677, W: 0.70710677}
-                        Scale*: {X: 0.1, Y: 0.1, Z: 0.1}
+                        Scale*: {X: 0.02, Y: 0.1, Z: 0.02}
                         Children:
                             bea34535c5bb69c7874ddaee15e577cb: ref!! e0964353-18bc-40c6-8a4e-beb1eb0e625f
                             e436cac3c7a91857d87fec36191e8711: ref!! 35ddaecd-dcf3-4b9c-ba6e-aa38d264859f
