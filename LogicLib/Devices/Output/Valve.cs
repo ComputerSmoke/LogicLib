@@ -1,5 +1,6 @@
 ﻿using Gas.Containers.Transfers;
 using LogicLib.Gates;
+using StrideUtils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace LogicLib.Devices.Output
 {
     public class Valve : Device
     {
-        Transfer Transfer => _transfer ??= Entity.Get<Transfer>();
+        Transfer Transfer => _transfer ??= Entity.GetNotNull<Transfer>();
         Transfer _transfer;
 
         public override void GateChange(Gate gate)

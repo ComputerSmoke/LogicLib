@@ -1,0 +1,320 @@
+!PrefabAsset
+Id: 60c7f7eb-a003-46d4-8eb4-63de22c7279d
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 89d23ade-18c9-4a4d-ad61-c80520794ee2
+    Parts:
+        -   Entity:
+                Id: 1c1b075b-9b81-49df-b126-d4114063b53c
+                Name: Input
+                Components:
+                    e45dde2755149ee81ed0ab6a2af55ffb: !TransformComponent
+                        Id: 7607a933-d3e3-4d63-95ba-844cc79388cd
+                        Position: {X: 0.0, Y: -0.7630467, Z: 1.7733476}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 40.0, Y: 65.0, Z: 40.0}
+                        Children:
+                            8c0dec398f09835f70391401d7b87dc7: ref!! d5ee77be-3101-4222-9397-b59d1a8da0c3
+                    4eaf373a91ec2e50d65aa0a216620869: !LogicLib.Gates.Solo.BufferGate,LogicLib
+                        Id: 83cf5107-dcc3-4c1b-a738-1d7a664bb41c
+        -   Entity:
+                Id: 1d83647c-3a8d-48ff-9cdb-ef5cd1b84604
+                Name*: PipeA
+                Components:
+                    f7c16a5880d3e7e42f31f38349f5294c: !TransformComponent
+                        Id: fbcd03bd-e3b9-4171-8db7-925764d71135
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale*: {X: 0.1, Y: 0.04, Z: 0.1}
+                        Children:
+                            bea34535c5bb69c7874ddaee15e577cb: ref!! e8bbebbb-ad77-4695-9e46-75d6e8fde289
+                            e436cac3c7a91857d87fec36191e8711: ref!! 65db56fe-0bd7-467f-a260-4eae9fa2b27a
+                    389ec641aa5c029c79502c8ef18a9bcd: !ModelComponent
+                        Id: 7117a5e6-1423-4b7c-9fe1-0a9212a20844
+                        Model: d2590b6f-b298-49a8-ae0d-d0284a5e898d:Pipes/PipeModel
+                        Materials:
+                            47da96ed292656e461f6a85a94acd263*~0: 298339d2-9cb4-4dcd-af11-0a04a279452c:Pipes/redPipe
+                    632eee1f3a079f6aef21f53aa79d5743: !Gas.Containers.Pipe,Gas
+                        Id: 9d20add7-c975-4d06-9d5f-de329a5fa2f6
+                        Volume: 0.0
+                        Temperature: 293.15
+                        InitialOxygen: 0.0
+                        InitialHydrogen: 0.0
+                        InitialCarbonDioxide: 0.0
+                        InitialCarbonMonoxide: 0.0
+                        InitialNitrogen: 0.0
+                    52bb41da1f47c05e4058efeb9d64ca06: !RigidbodyComponent
+                        Id: d8ac6929-33be-4615-a4c4-9e4dda4f9de9
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            c7af9596e86ac5e54338ce4374d23a4c: !CylinderColliderShapeDesc
+                                Height: 10.0
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 5.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 0d277501-d369-49bf-ace1-4c6d9ab9088e:Pipes/PipePrefab
+                BasePartId: f1262846-ece5-4404-95ab-f6dca75d9b7a
+                InstanceId: 779c9a1a-b555-4674-bdd7-43381ffa8f2d
+        -   Folder: null
+            Entity:
+                Id: 6f2fbacb-99e3-4ae6-a7f9-c80c026789cd
+                Name: Hole
+                Components:
+                    2372b84bc1f20b47147fe2724b16d64f: !TransformComponent
+                        Id: 65db56fe-0bd7-467f-a260-4eae9fa2b27a
+                        Position: {X: 0.0, Y: 0.03719621, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.65, Y: 1.0, Z: 0.65}
+                        Children: {}
+                    71a3a2088ad82ba2948f4b9cd4d003e7: !RigidbodyComponent
+                        Id: ff85633c-3704-4dc8-a7bf-75590ff7ec99
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 0.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            7a5695f375320b42f386a42c94cdc7eb: !CylinderColliderShapeDesc
+                                Height: 0.1
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    ed3cb4905332f4e650046787b414ee63: !Gas.Containers.Transfers.Transfer,Gas
+                        Id: 224634e0-4730-48cf-8390-2912597ff6a3
+                        Active: true
+                    95db2b6c2978194f2de9991bd7f1c3a2: !Gas.Containers.Transfers.AreaCalculators.Circle,Gas
+                        Id: 82c852fe-1335-4979-b57b-7ef7b0bceba3
+                    4b50924a71a51b16306ed3c5bc7eecb9: !Gas.Containers.Transfers.Exchangers.Exchanger,Gas
+                        Id: 1d71e632-08b8-45f3-9201-33fb96fc81f3
+                    de1f7fceb3dc8686c868a1b5eccd9544: !Gas.Containers.Transfers.Targeters.Intersected,Gas
+                        Id: 8f59a1b7-37cf-4b44-90ec-031b46b18707
+            Base:
+                BasePartAsset: 0d277501-d369-49bf-ace1-4c6d9ab9088e:Pipes/PipePrefab
+                BasePartId: b3659ff4-99cb-4dbe-bf97-c9f93b7ca691
+                InstanceId: 779c9a1a-b555-4674-bdd7-43381ffa8f2d
+        -   Entity:
+                Id: 89d23ade-18c9-4a4d-ad61-c80520794ee2
+                Name: Valve
+                Components:
+                    6dfee4933f59e425c91d45bbae6fe0fb: !TransformComponent
+                        Id: 0c7f2bc3-727b-4bf6-97d4-1456c4debec4
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            34f5aa4ee27caa9851d0f0493f7cf113: ref!! cfc22195-7e8a-4085-9095-06da4b43bbfa
+                            cc16a4de3146541ae444ffb4fd06ac40: ref!! fbcd03bd-e3b9-4171-8db7-925764d71135
+        -   Entity:
+                Id: 8e889c2b-bd04-4d2d-b1d7-fdfe0e80e169
+                Name: Input
+                Components:
+                    fed4d5e924410676db8692ff92557a58: !TransformComponent
+                        Id: d5ee77be-3101-4222-9397-b59d1a8da0c3
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    085191278eb245c21f6e3f1dcef5c981: !ModelComponent
+                        Id: 09179d75-21bf-43c0-813e-eceb6358fcfb
+                        Model: 46892274-a637-4430-9a85-b482cae064f9:Gates/models/Connector
+                        Materials:
+                            e6f8bbf8b44033be361574cb6730a20f~0: 5ad98204-5c4e-4844-b1c5-0e853becbc1c:GateResources/materials/ConnectorIn
+                    02f621b5858381a9babd21e8401a801d: !RigidbodyComponent
+                        Id: 23053ebb-8207-408f-b754-7cb8793530e9
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            cada2c28944ca0a91d4f2848942fe833: !CylinderColliderShapeDesc
+                                Height: 0.05
+                                Radius: 0.0125
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    1335879ede0f670e5cea7db1e38ef63c: !LogicLib.Gates.Connectors.InputConnector,LogicLib
+                        Id: a43daa41-af57-40d1-9d97-4a61c3ce5667
+                        Channel: 0
+                        InitialConnector: null
+            Base:
+                BasePartAsset: 613b9a34-7ea2-4faf-97d2-062686a7f696:Gates/prefabs/Input
+                BasePartId: 7d220887-e62e-4efb-b855-b166a3e1f717
+                InstanceId: 9b906bdb-404d-4f9f-bc3f-1254a834ddb2
+        -   Entity:
+                Id: a1561993-1964-490b-becf-0a7aba957938
+                Name*: PipeB
+                Components:
+                    f7c16a5880d3e7e42f31f38349f5294c: !TransformComponent
+                        Id: cfc22195-7e8a-4085-9095-06da4b43bbfa
+                        Position*: {X: 0.0, Y: 0.4, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale*: {X: 0.1, Y: 0.04, Z: 0.1}
+                        Children:
+                            bea34535c5bb69c7874ddaee15e577cb: ref!! 8fe55082-6a3a-4944-8cbc-8b727268ed15
+                    389ec641aa5c029c79502c8ef18a9bcd: !ModelComponent
+                        Id: 9a3c4a85-9a2d-45a2-80a7-0f1b3399ae5d
+                        Model: d2590b6f-b298-49a8-ae0d-d0284a5e898d:Pipes/PipeModel
+                        Materials:
+                            47da96ed292656e461f6a85a94acd263*~0: 298339d2-9cb4-4dcd-af11-0a04a279452c:Pipes/redPipe
+                    632eee1f3a079f6aef21f53aa79d5743: !Gas.Containers.Pipe,Gas
+                        Id: 95c0fe77-2058-4f3f-b03b-b52606994a27
+                        Volume: 0.0
+                        Temperature: 293.15
+                        InitialOxygen: 0.0
+                        InitialHydrogen: 0.0
+                        InitialCarbonDioxide: 0.0
+                        InitialCarbonMonoxide: 0.0
+                        InitialNitrogen: 0.0
+                    52bb41da1f47c05e4058efeb9d64ca06: !RigidbodyComponent
+                        Id: 54b4d3da-a780-4d27-87b9-cf411449573f
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            c7af9596e86ac5e54338ce4374d23a4c: !CylinderColliderShapeDesc
+                                Height: 10.0
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 5.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 0d277501-d369-49bf-ace1-4c6d9ab9088e:Pipes/PipePrefab
+                BasePartId: f1262846-ece5-4404-95ab-f6dca75d9b7a
+                InstanceId: db9021dd-3856-4470-a2a4-64d840160605
+        -   Entity:
+                Id: bc37d2e2-a639-42c4-a2c0-a28575f996a0
+                Name: Hole
+                Components:
+                    2372b84bc1f20b47147fe2724b16d64f: !TransformComponent
+                        Id: 8fe55082-6a3a-4944-8cbc-8b727268ed15
+                        Position: {X: 0.0, Y: 9.95, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.65, Y: 1.0, Z: 0.65}
+                        Children: {}
+                    71a3a2088ad82ba2948f4b9cd4d003e7: !RigidbodyComponent
+                        Id: 220852c7-4366-47ab-82b9-2889c6327706
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 0.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            7a5695f375320b42f386a42c94cdc7eb: !CylinderColliderShapeDesc
+                                Height: 0.1
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    097f41b2a7e24ad8ae1a7ddce078e930: !Gas.Containers.Transfers.Transfer,Gas
+                        Id: 4427ecb9-bda4-4435-8fa2-5a3e873b52c2
+                        Active: true
+                    4c9b93568d3817f751cf1600e358fa63: !Gas.Containers.Transfers.Exchangers.Exchanger,Gas
+                        Id: 209542f3-3e44-453a-8ea0-228b155ca310
+                    ad0369a2265a12c2c082ec866687133e: !Gas.Containers.Transfers.AreaCalculators.Circle,Gas
+                        Id: ba26f6e8-179a-4c01-a1c2-a7469f347715
+                    7209988fc5ac097f6ae1673683047f6c: !Gas.Containers.Transfers.Targeters.Intersected,Gas
+                        Id: 4552006b-927c-40df-af02-22aaaf44e99d
+            Base:
+                BasePartAsset: 0d277501-d369-49bf-ace1-4c6d9ab9088e:Pipes/PipePrefab
+                BasePartId: c2859f12-1726-4e2f-847c-eaa202ec5bde
+                InstanceId: db9021dd-3856-4470-a2a4-64d840160605
+        -   Entity:
+                Id: c5a060bb-d09e-408a-b53a-3cb9d06e46e0
+                Name: Hole
+                Components:
+                    2372b84bc1f20b47147fe2724b16d64f: !TransformComponent
+                        Id: e8bbebbb-ad77-4695-9e46-75d6e8fde289
+                        Position*: {X: 0.0, Y: 10.8289175, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.65, Y: 1.0, Z: 0.65}
+                        Children:
+                            6f79490fab4696eecd501cd913a7e7b4: ref!! 7607a933-d3e3-4d63-95ba-844cc79388cd
+                    71a3a2088ad82ba2948f4b9cd4d003e7: !RigidbodyComponent
+                        Id: 807cffc9-95a3-449a-a395-9a7783e76240
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: true
+                        Mass: 0.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            7a5695f375320b42f386a42c94cdc7eb: !CylinderColliderShapeDesc
+                                Height: 0.1
+                                Radius: 1.0
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    097f41b2a7e24ad8ae1a7ddce078e930: !Gas.Containers.Transfers.Transfer,Gas
+                        Id: 984fcbfc-19e1-4df5-8e92-c5923f9a5fa3
+                        Active*: false
+                    4c9b93568d3817f751cf1600e358fa63: !Gas.Containers.Transfers.Exchangers.Exchanger,Gas
+                        Id: fa2f459f-127b-4a2a-9e5d-3070ce95a8cc
+                    ad0369a2265a12c2c082ec866687133e: !Gas.Containers.Transfers.AreaCalculators.Circle,Gas
+                        Id: 4c66ec56-9a63-4ab1-9e54-5006df865d25
+                    7209988fc5ac097f6ae1673683047f6c: !Gas.Containers.Transfers.Targeters.Intersected,Gas
+                        Id: 486f423b-8ee1-4e92-9fe3-8dad6ee9aac3
+                    bca2a1e3a7b0c150c40bfe549eb69c88*: !LogicLib.Devices.Output.Valve,LogicLib
+                        Id: 2e59aaed-9c48-475d-aefc-6a0fe2314778
+            Base:
+                BasePartAsset: 0d277501-d369-49bf-ace1-4c6d9ab9088e:Pipes/PipePrefab
+                BasePartId: c2859f12-1726-4e2f-847c-eaa202ec5bde
+                InstanceId: 779c9a1a-b555-4674-bdd7-43381ffa8f2d
