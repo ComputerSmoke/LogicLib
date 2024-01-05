@@ -13,7 +13,7 @@ namespace LogicLib.Gates
         {
             if(inputs.Length != 3)
                 throw new ConnectorMiscountException("Mux gate must have 3 input connectors");
-            return (inputs[0] & 1) == 1 ? inputs[1] : inputs[2];
+            return Truthy(inputs[0]) ? inputs[1] : inputs[2];
         }
     }
 }

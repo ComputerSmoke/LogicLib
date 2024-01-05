@@ -11,12 +11,8 @@ namespace LogicLib.Devices.Input.Interactables
 {
     public abstract class Interactable : Device
     {
-        protected AnimationComponent animations;
-        public override Task Execute()
-        {
-            animations = Entity.Get<AnimationComponent>();
-            return Task.CompletedTask;
-        }
+        protected AnimationComponent Animations => _animations ??= Entity.Get<AnimationComponent>();
+        AnimationComponent _animations;
         public abstract void Interact();
     }
 }

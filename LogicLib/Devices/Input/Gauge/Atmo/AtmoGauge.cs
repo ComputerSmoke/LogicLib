@@ -11,7 +11,7 @@ namespace LogicLib.Devices.Input.Gauge.Atmo
     {
         protected override long Measure()
         {
-            return Measure(Universe.Parent(physicsComponent));
+            return Measure(Universe.Parent(PhysicsComponent));
         }
         //Take measure of atmo in container
         protected abstract long Measure(Container container);

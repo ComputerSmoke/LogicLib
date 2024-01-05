@@ -39,16 +39,15 @@ namespace LogicLib.Gates.Connectors
         private Color4 GetColor()
         {
             long value = Read();
-            return (value & 1) == 1 ? new Color4(0, 1, 0) : new Color4(1, 0, 0);
+            return Gate.Truthy(value) ? new Color4(0, 1, 0) : new Color4(1, 0, 0);
         }
         public override void Disconnect()
         {
             base.Disconnect();
             ParticleSystem.Enabled = false;
         }
-        public override void Tick()
+        public void UpdateColor()
         {
-            Connected?.Tick();
             ParticleSystem.Color = GetColor();
         }
         public override long Read()

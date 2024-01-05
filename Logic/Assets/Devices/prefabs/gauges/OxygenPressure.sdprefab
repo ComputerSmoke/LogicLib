@@ -47,7 +47,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     e3f921bfed684d04c0b4acbb4db83058: !LogicLib.Devices.Input.Gauge.Atmo.OxygenGauge,LogicLib
                         Id: d382b57f-39e8-401b-8480-a0ed172326d0
-                        UpdateMs: 100
         -   Entity:
                 Id: 1d857368-cee6-4428-9a4c-39cd68706f71
                 Name: Output

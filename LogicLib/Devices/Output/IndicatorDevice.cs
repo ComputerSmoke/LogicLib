@@ -7,21 +7,18 @@ using System.Text;
 using System.Threading.Tasks;
 using Stride.Core.Mathematics;
 using LogicLib.Gates.Solo;
+using StrideUtils;
 
 namespace LogicLib.Devices.Output
 {
     public class IndicatorDevice : Device
     {
-        private LightComponent lightComponent;
-        public override Task Execute()
-        {
-            lightComponent = Entity.FindInChild<LightComponent>();
-            return Task.CompletedTask;
-        }
+        LightComponent LightComponent => _lightComponent ??= Entity.FindInChild<LightComponent>();
+        LightComponent _lightComponent;
         public override void GateChange(Gate gate)
         {
-            var color = (gate.State & 1) == 1 ? new Color3(0, 255, 0) : new Color3(255, 0, 0);
-            lightComponent.SetColor(color);
+            var color = Gate.Truthy(gate.State) ? new Color3(0, 255, 0) : new Color3(255, 0, 0);
+            LightComponent.SetColor(color);
         }
     }
 }

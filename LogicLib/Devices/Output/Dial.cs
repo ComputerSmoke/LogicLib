@@ -13,17 +13,13 @@ namespace LogicLib.Devices.Output
 {
     public class Dial : Device
     {
-        private ReverseBoneBinding boneBinding;
-        public override Task Execute()
-        {
-            boneBinding = new("Needle", Entity.Get<ModelComponent>().Skeleton);
-            return Task.CompletedTask;
-        }
+        ReverseBoneBinding BoneBinding => _boneBinding ??= new("Needle", Entity.Get<ModelComponent>().Skeleton);
+        ReverseBoneBinding _boneBinding;
         public override void GateChange(Gate gate)
         {
             float angle = -(float)Math.Max(0, Math.Min(Math.PI, Math.PI * gate.State / 180));
             Quaternion rotation = Quaternion.RotationAxis(Vector3.UnitZ, angle);
-            boneBinding.Rotate(rotation);
+            BoneBinding.Rotate(rotation);
         }
     }
 }

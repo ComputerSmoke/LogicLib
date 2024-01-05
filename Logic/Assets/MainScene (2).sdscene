@@ -1381,7 +1381,6 @@ Hierarchy:
                             0dcbd606c951e5f610efcb7f2ecf8c07~0: 69bc9b59-b743-4274-bf50-5e2f2ca84996:Devices/models/Input/Barometers/mats/totalPressure
                     04c69e721e2b53b538506ee07d5be715: !LogicLib.Devices.Input.Gauge.Atmo.PressureGauge,LogicLib
                         Id: a0ef52d0-7c3e-4814-b847-5d6e76b5f626
-                        UpdateMs*: 50
                     5ac02fb5c0dcb62fab9cf0c7eb4f9c88: !RigidbodyComponent
                         Id: 21259cb8-2d4e-4a67-adcc-d75e944827b1
                         CanSleep: false
@@ -1427,7 +1426,6 @@ Hierarchy:
                             0dcbd606c951e5f610efcb7f2ecf8c07~0: 69bc9b59-b743-4274-bf50-5e2f2ca84996:Devices/models/Input/Barometers/mats/totalPressure
                     04c69e721e2b53b538506ee07d5be715: !LogicLib.Devices.Input.Gauge.Atmo.PressureGauge,LogicLib
                         Id: 3821f3db-fbc9-471a-9612-73c3cce2df8e
-                        UpdateMs*: 50
                     5ac02fb5c0dcb62fab9cf0c7eb4f9c88: !RigidbodyComponent
                         Id: ee197431-55a2-4f0f-80bd-06e4e18a2286
                         CanSleep: false
@@ -3344,7 +3342,6 @@ Hierarchy:
                             0dcbd606c951e5f610efcb7f2ecf8c07~0: 69bc9b59-b743-4274-bf50-5e2f2ca84996:Devices/models/Input/Barometers/mats/totalPressure
                     04c69e721e2b53b538506ee07d5be715: !LogicLib.Devices.Input.Gauge.Atmo.PressureGauge,LogicLib
                         Id: a5c078e5-0db2-4f2b-85a4-2c888b165ce9
-                        UpdateMs*: 50
                     5ac02fb5c0dcb62fab9cf0c7eb4f9c88: !RigidbodyComponent
                         Id: 27ff2d95-8698-4339-a05b-9a29983af0f7
                         CanSleep: false
@@ -4451,7 +4448,7 @@ Hierarchy:
                 Components:
                     f7c16a5880d3e7e42f31f38349f5294c: !TransformComponent
                         Id: ab2ca335-0f6f-4c45-8c33-ba2d3bc9c152
-                        Position*: {X: 3.137896, Y: 1.077975, Z: 4.326871}
+                        Position*: {X: 3.137896, Y: 1.0811081, Z: 4.326871}
                         Rotation*: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale*: {X: 0.02, Y: 0.04, Z: 0.02}
                         Children:
@@ -4525,7 +4522,6 @@ Hierarchy:
                             0dcbd606c951e5f610efcb7f2ecf8c07~0: 69bc9b59-b743-4274-bf50-5e2f2ca84996:Devices/models/Input/Barometers/mats/totalPressure
                     04c69e721e2b53b538506ee07d5be715: !LogicLib.Devices.Input.Gauge.Atmo.PressureGauge,LogicLib
                         Id: 9593c6c4-1574-4b3d-a45c-d4d85baeb4f9
-                        UpdateMs*: 50
                     5ac02fb5c0dcb62fab9cf0c7eb4f9c88: !RigidbodyComponent
                         Id: 0e7c3ec5-24f6-4723-af15-2bc1cb107192
                         CanSleep: false

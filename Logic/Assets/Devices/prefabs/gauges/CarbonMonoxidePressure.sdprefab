@@ -47,7 +47,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     206af91ef6bd1cc8c5e7d89d978020d0: !LogicLib.Devices.Input.Gauge.Atmo.CarbonMonoxideGauge,LogicLib
                         Id: 6c6ecbd6-b3ff-4457-b28c-02efd0807681
-                        UpdateMs: 100
         -   Entity:
                 Id: 5d5953f5-6cd4-44ca-b508-c2c15b17eabe
                 Name: Output

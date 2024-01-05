@@ -14,18 +14,6 @@ namespace LogicLib.Gates.Connectors
     {
         public int Channel { get; set; }
         public OutputConnector InitialConnector { get; set; }
-        //Connect and tick gate.
-        public override bool Connect(Connector connector)
-        {
-            if (!base.Connect(connector))
-                return false;
-            Tick();
-            return true;
-        }
-        public override void Tick()
-        {
-            Ticker.UpdateGate(Gate);
-        }
         public override long Read()
         {
             if (Connected == null)

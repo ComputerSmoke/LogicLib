@@ -24,7 +24,6 @@ Hierarchy:
                             0dcbd606c951e5f610efcb7f2ecf8c07~0: 69bc9b59-b743-4274-bf50-5e2f2ca84996:Devices/models/Input/Barometers/mats/totalPressure
                     04c69e721e2b53b538506ee07d5be715: !LogicLib.Devices.Input.Gauge.Atmo.PressureGauge,LogicLib
                         Id: f479a2c3-ef95-4ccd-9be5-68e261acae8f
-                        UpdateMs: 100
                     5ac02fb5c0dcb62fab9cf0c7eb4f9c88: !RigidbodyComponent
                         Id: 52ae4e36-653e-44a2-8f23-35e7641b32b2
                         CanSleep: false

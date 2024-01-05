@@ -16,7 +16,7 @@ namespace LogicLib.Gates.Settable
         public virtual void SetNextState(long state)
         {
             NextState = state;
-            Ticker.UpdateGate(this);
+            //TODO: when only update changed optimization implemented, mark this one as needing change
         }
     }
 }

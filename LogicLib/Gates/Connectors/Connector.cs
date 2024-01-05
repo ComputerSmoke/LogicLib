@@ -11,7 +11,7 @@ namespace LogicLib.Gates.Connectors
     public class IncompatibleConnectorException(string msg) : Exception(msg) { }
     public abstract class Connector : StartupScript
     {
-        protected Gate Gate => _gate ??= Entity.GetParent().Get<Gate>();
+        protected Gate Gate => _gate ??= Entity.GetParent().GetNotNull<Gate>();
         Gate _gate;
         public Connector Connected { get; protected set; }
         //Connect to another connector. Returns false if already connected, true otherwise.
@@ -33,7 +33,6 @@ namespace LogicLib.Gates.Connectors
             Connected = null;
             temp.Disconnect();
         }
-        public abstract void Tick();
         public abstract long Read();
     }
 }

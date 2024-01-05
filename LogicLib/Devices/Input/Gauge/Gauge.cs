@@ -6,28 +6,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StrideUtils;
 
 namespace LogicLib.Devices.Input.Gauge
 {
     public abstract class Gauge : Device
     {
-        protected SettableGate output;
-        public int UpdateMs = 50;
-        protected PhysicsComponent physicsComponent;
-        public override async Task Execute()
+        protected SettableGate Output => _output ??= Entity.FindInChild<SettableGate>();
+        SettableGate _output;
+        protected PhysicsComponent PhysicsComponent => _physicsComponent ??= Entity.GetNotNull<PhysicsComponent>();
+        PhysicsComponent _physicsComponent;
+        public override void Start()
         {
-            output = Entity.FindInChild<SettableGate>();
-            physicsComponent = Entity.Get<PhysicsComponent>();
-            await UpdateLoop();
+            base.Start();
+            GaugeManager.Manager.Register(this);
         }
-        private async Task UpdateLoop()
+        public void UpdateGauge()
         {
-            await Script.NextFrame();
-            while(Game.IsRunning)
-            {
-                output.SetNextState(Measure());
-                await Task.Delay(UpdateMs);
-            }
+            long measurement = Measure();
+            Output.SetNextState(measurement);
         }
         //Measure whatever the gauge is measuring
         protected abstract long Measure();

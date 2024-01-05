@@ -1,6 +1,7 @@
 ﻿using Stride.Engine;
 using LogicLib.Devices;
 using LogicLib.Gates.Connectors;
+using StrideUtils;
 
 namespace LogicLib.Gates
 {
@@ -14,13 +15,12 @@ namespace LogicLib.Gates
         bool hadFirstRun;
         public override void Start()
         {
-            base.Start();
             if (Entity.GetParent() == null)
                 devices = [];
             else
                 devices = new(Entity.GetParent().GetAll<Device>());
             FindConnectors();
-            Ticker.UpdateGate(this);
+            GateManager.Manager.Register(this);
         }
         private void FindConnectors()
         {
@@ -48,12 +48,17 @@ namespace LogicLib.Gates
                 return;
             hadFirstRun = true;
             State = NextState;
-            foreach (Connector connector in outputs)
-                connector.Tick();
+            foreach (OutputConnector connector in outputs)
+                connector.UpdateColor();
             foreach (Device device in devices)
                 device.GateChange(this);
         }
         //Logic of gate
         protected abstract long ComputeNextState(long[] inputs);
+        //States are considered truthy if odd
+        public static bool Truthy(long state)
+        {
+            return (state & 1) == 1;
+        }
     }
 }

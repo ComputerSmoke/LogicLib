@@ -7,22 +7,22 @@ using System.Text;
 using System.Threading.Tasks;
 using Vortice.Vulkan;
 using Stride.Animations;
+using StrideUtils;
 
 namespace LogicLib.Devices.Input.Interactables
 {
     public class Lever : Interactable
     {
-        private SettableGate output;
-        private bool down;
-        private PlayingAnimation animation;
-        public override Task Execute()
+        SettableGate Output => _output ??= Entity.FindInChild<SettableGate>();
+        SettableGate _output;
+        bool down;
+        PlayingAnimation animation;
+        public override void Start()
         {
-            base.Execute();
-            output = Entity.FindInChild<SettableGate>();
-            animation = animations.Play("interact");
+            base.Start();
+            animation = Animations.Play("interact");
             animation.TimeFactor = 0f;
             animation.RepeatMode = AnimationRepeatMode.PlayOnceHold;
-            return Task.CompletedTask;
         }
 
         public override void GateChange(Gate gate) { }
@@ -30,7 +30,7 @@ namespace LogicLib.Devices.Input.Interactables
         public override void Interact()
         {
             down = !down;
-            output.SetNextState(down ? -1 : 0);
+            Output.SetNextState(down ? -1 : 0);
             if (down)
                 animation.TimeFactor = 1f;
             else
